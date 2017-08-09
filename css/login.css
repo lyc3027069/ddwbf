@@ -1,0 +1,217 @@
+header {
+  margin: 12px auto 14px;
+  width: 1200px;
+  height: 60px; }
+  header > a {
+    float: left;
+    margin-top: 7px; }
+  header div {
+    float: right;
+    margin-top: 36px; }
+    header div a {
+      font-size: 10px; }
+      header div a:hover {
+        color: #787878;
+        text-decoration: underline; }
+
+.margin {
+  width: 1200px;
+  margin: 0 auto; }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+#main {
+  padding: 40px 0; }
+  #main > img {
+    float: left;
+    cursor: pointer; }
+  #main #login {
+    box-shadow: 0 0 1px 1px #ccc;
+    margin-top: 50px;
+    float: right;
+    width: 360px;
+    border: 1px solid #eef2f4; }
+    #main #login h3 {
+      padding: 7px 6px 4px 24px; }
+      #main #login h3 span {
+        float: left;
+        font: 17px/54px "";
+        color: #3c3c3c; }
+      #main #login h3 > a {
+        float: right; }
+      #main #login h3 i {
+        cursor: pointer;
+        float: right; }
+    #main #login #login-wrap {
+      padding: 0 24px; }
+      #main #login #login-wrap > div.wdpd {
+        width: 310px;
+        height: 36px;
+        color: #b0b0b0;
+        border: 1px solid #ccc;
+        line-height: 36px;
+        border-radius: 3px;
+        position: relative;
+        padding-left: 10px; }
+        #main #login #login-wrap > div.wdpd span.placeholder {
+          position: absolute;
+          left: 40px;
+          top: 0; }
+        #main #login #login-wrap > div.wdpd input {
+          position: absolute;
+          top: 0px;
+          left: 40px;
+          width: 275px;
+          height: 34px;
+          border: none; }
+      #main #login #login-wrap > p {
+        height: 30px;
+        line-height: 30px;
+        color: #9A9FA6; }
+      #main #login #login-wrap > p.username-tip span, #main #login #login-wrap > p.password-tip span {
+        display: none; }
+      #main #login #login-wrap > p.auto-login {
+        height: 34px;
+        line-height: 34px; }
+        #main #login #login-wrap > p.auto-login input {
+          float: left;
+          margin: 11px 8px 0 4px; }
+        #main #login #login-wrap > p.auto-login span {
+          float: left; }
+        #main #login #login-wrap > p.auto-login a {
+          float: right;
+          color: #1a66b3; }
+          #main #login #login-wrap > p.auto-login a:hover {
+            text-decoration: underline; }
+      #main #login #login-wrap > a {
+        display: block;
+        height: 44px;
+        background-color: #ff2832;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 44px;
+        border-radius: 5px; }
+        #main #login #login-wrap > a:hover {
+          background-color: #f01923; }
+      #main #login #login-wrap div.regsiter {
+        margin: 12px 0 7px; }
+        #main #login #login-wrap div.regsiter a {
+          margin-left: 160px; }
+          #main #login #login-wrap div.regsiter a:hover {
+            text-decoration: underline; }
+      #main #login #login-wrap div.partner {
+        height: 20px;
+        line-height: 20px;
+        position: relative;
+        padding-bottom: 17px; }
+        #main #login #login-wrap div.partner > a {
+          float: left;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          background: url("../images/login_icon.png") no-repeat 0 -260px; }
+        #main #login #login-wrap div.partner > a:nth-of-type(1) {
+          background: url("../images/login_icon.png") no-repeat 0 -260px; }
+          #main #login #login-wrap div.partner > a:nth-of-type(1):hover {
+            background-position-x: -20px;
+            background-position-y: -260px; }
+        #main #login #login-wrap div.partner > a:nth-of-type(2) {
+          background: url("../images/login_icon.png") no-repeat 0 -280px; }
+          #main #login #login-wrap div.partner > a:nth-of-type(2):hover {
+            background-position-x: -20px;
+            background-position-y: -280px; }
+        #main #login #login-wrap div.partner > a:nth-of-type(3) {
+          background: url("../images/login_icon.png") no-repeat 0 -300px; }
+          #main #login #login-wrap div.partner > a:nth-of-type(3):hover {
+            background-position-x: -20px;
+            background-position-y: -300px; }
+        #main #login #login-wrap div.partner > a:nth-of-type(4) {
+          background: url("../images/login_icon.png") no-repeat 0 -320px; }
+          #main #login #login-wrap div.partner > a:nth-of-type(4):hover {
+            background-position-x: -20px;
+            background-position-y: -320px; }
+        #main #login #login-wrap div.partner span {
+          float: left;
+          margin-left: 10px;
+          cursor: pointer; }
+          #main #login #login-wrap div.partner span i {
+            display: inline-block;
+            width: 8px;
+            height: 20px;
+            background: url("../images/login_icon.png") no-repeat 0 -340px;
+            margin-left: 5px; }
+        #main #login #login-wrap div.partner div.more {
+          position: absolute;
+          display: none;
+          top: 24px;
+          left: 110px;
+          width: 200px;
+          height: 24px;
+          border: 1px solid #eaeaea;
+          border-radius: 3px;
+          background: #fafafa; }
+          #main #login #login-wrap div.partner div.more a {
+            color: #6e6e83;
+            padding: 0 9px; }
+            #main #login #login-wrap div.partner div.more a:hover {
+              text-decoration: underline; }
+          #main #login #login-wrap div.partner div.more b {
+            position: absolute;
+            width: 8px;
+            height: 6px;
+            left: 9px;
+            top: -4px;
+            background: url("../images/login_more.png") no-repeat 0 0; }
+    #main #login #login-wrap-ewm {
+      display: none;
+      position: relative;
+      height: 370px;
+      width: 100%; }
+      #main #login #login-wrap-ewm div {
+        padding: 15px;
+        border: 1px solid #ececec;
+        width: 131px;
+        position: absolute;
+        top: 58px;
+        left: 97px; }
+      #main #login #login-wrap-ewm p {
+        position: absolute;
+        top: 276px;
+        width: 100%;
+        text-align: center; }
+        #main #login #login-wrap-ewm p span {
+          cursor: pointer;
+          color: #ff2832;
+          margin-right: 15px; }
+
+footer footer {
+  height: 296px;
+  width: 100%;
+  border-top: 1px solid #CCC;
+  text-align: center;
+  color: #8c8c8c; }
+  footer footer span {
+    margin: 0 18px 0 20px; }
+  footer footer p {
+    font: 11px/81px "";
+    margin-top: 12px; }
+    footer footer p a {
+      color: #8c8c8c; }
+  footer footer div:nth-of-type(1) {
+    margin-bottom: 13px; }
+  footer footer div:nth-of-type(2),
+  footer footer div:nth-of-type(3) {
+    font: 11px/20px ""; }
+  footer footer div:nth-of-type(4) {
+    margin-top: 25px; }
+    footer footer div:nth-of-type(4) a {
+      margin-right: 5px; }
+
+/*# sourceMappingURL=login.css.map */

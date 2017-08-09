@@ -1,0 +1,330 @@
+{
+	"shoppinginfo": [
+		{
+			"id": 20170101001,
+			"bigImgSrc": "images/shoplist-pic1.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic1-sm1.jpg",
+				"images/shoplist-pic1-sm2.jpg",
+				"images/shoplist-pic1-sm3.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details11.jpg",
+					"images/details11-mid.jpg",
+					"images/details11-big.jpg"
+				],[
+					"images/details12.jpg",
+					"images/details12-mid.jpg",
+					"images/details12-big.jpg"
+				]
+			],
+			"price": "￥9.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [9.90,"(6.51折)",69.00],
+			"name": "森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满500减300 ",
+			"star": [
+				"95%",
+				"123"
+			],
+			"link": "森马官方旗舰店"
+		}, {
+			"id": 20170101002,
+			"bigImgSrc": "images/shoplist-pic2.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic2-sm1.jpg",
+				"images/shoplist-pic2-sm2.jpg",
+				"images/shoplist-pic2-sm2.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details21.jpg",
+					"images/details21-mid.jpg",
+					"images/details21-big.jpg"
+				],[
+					"images/details22.jpg",
+					"images/details22-mid.jpg",
+					"images/details22-big.jpg"
+				]
+			],
+			"price": "￥123.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				123.90,
+				"(6.51折)",
+				269.00
+			],
+			"name": "森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满399减200 ",
+			"star": [
+				"90%",
+				"146"
+			],
+			"link": "优鲨服饰旗舰店"
+		}, {
+			"id": 20170101003,
+			"bigImgSrc": "images/shoplist-pic3.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic3-sm1.jpg",
+				"images/shoplist-pic3-sm1.jpg",
+				"images/shoplist-pic3-sm1.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details31.jpg",
+					"images/details31-mid.jpg",
+					"images/details31-big.jpg"
+				],[
+					"images/details32.jpg",
+					"images/details32-mid.jpg",
+					"images/details32-big.jpg"
+				]
+			],
+			"price": "￥14.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				14.90,
+				"(6.51折)",
+				39.00
+			],
+			"name": " JACK&JONES杰克琼斯牛仔裤春秋男士时尚潮流修身水洗磨白牛仔裤-32-5-3-216132026160 ",
+			"search_hot": "  杰克琼斯牛仔裤水洗白牛仔裤  ",
+			"star": [
+				"80%",
+				"441"
+			],
+			"link": "优鲨服饰旗舰店"
+		}, {
+			"id": 20170101004,
+			"bigImgSrc": "images/shoplist-pic4.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic4-sm1.jpg",
+				"images/shoplist-pic4-sm2.jpg",
+				"images/shoplist-pic4-sm1.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details41.jpg",
+					"images/details41-mid.jpg",
+					"images/details41-big.jpg"
+				],[
+					"images/details42.jpg",
+					"images/details42-mid.jpg",
+					"images/details42-big.jpg"
+				]
+			],
+			"price": "￥19.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				19.90,
+				"(6.51折)",
+				39.00
+			],
+			"name": " 优鲨春秋款牛仔裤男青年直筒修身款男小脚裤休闲男士牛仔长裤潮 ",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满299减100 ",
+			"star": [
+				"90%",
+				"146"
+			],
+			"link": "森马官方旗舰店"
+		},
+		
+		{
+			"id": 20170101005,
+			"bigImgSrc": "images/shoplist-pic1.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic1-sm1.jpg",
+				"images/shoplist-pic1-sm2.jpg",
+				"images/shoplist-pic1-sm3.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details11.jpg",
+					"images/details11-mid.jpg",
+					"images/details11-big.jpg"
+				],[
+					"images/details12.jpg",
+					"images/details12-mid.jpg",
+					"images/details12-big.jpg"
+				]
+			],
+			"price": "￥9.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [9.90,"(6.51折)",69.00],
+			"name": "森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满500减300 ",
+			"star": [
+				"95%",
+				"123"
+			],
+			"link": "森马官方旗舰店"
+		}, {
+			"id": 20170101006,
+			"bigImgSrc": "images/shoplist-pic2.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic2-sm1.jpg",
+				"images/shoplist-pic2-sm2.jpg",
+				"images/shoplist-pic2-sm2.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details21.jpg",
+					"images/details21-mid.jpg",
+					"images/details21-big.jpg"
+				],[
+					"images/details22.jpg",
+					"images/details22-mid.jpg",
+					"images/details22-big.jpg"
+				]
+			],
+			"price": "￥123.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				123.90,
+				"(6.51折)",
+				269.00
+			],
+			"name": "森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满399减200 ",
+			"star": [
+				"90%",
+				"146"
+			],
+			"link": "优鲨服饰旗舰店"
+		}, {
+			"id": 20170101007,
+			"bigImgSrc": "images/shoplist-pic3.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic3-sm1.jpg",
+				"images/shoplist-pic3-sm1.jpg",
+				"images/shoplist-pic3-sm1.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details31.jpg",
+					"images/details31-mid.jpg",
+					"images/details31-big.jpg"
+				],[
+					"images/details32.jpg",
+					"images/details32-mid.jpg",
+					"images/details32-big.jpg"
+				]
+			],
+			"price": "￥14.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				14.90,
+				"(6.51折)",
+				39.00
+			],
+			"name": " JACK&JONES杰克琼斯牛仔裤春秋男士时尚潮流修身水洗磨白牛仔裤-32-5-3-216132026160 ",
+			"search_hot": "  杰克琼斯牛仔裤水洗白牛仔裤  ",
+			"star": [
+				"80%",
+				"441"
+			],
+			"link": "优鲨服饰旗舰店"
+		}, {
+			"id": 20170101008,
+			"bigImgSrc": "images/shoplist-pic4.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic4-sm1.jpg",
+				"images/shoplist-pic4-sm2.jpg",
+				"images/shoplist-pic4-sm1.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details41.jpg",
+					"images/details41-mid.jpg",
+					"images/details41-big.jpg"
+				],[
+					"images/details42.jpg",
+					"images/details42-mid.jpg",
+					"images/details42-big.jpg"
+				]
+			],
+			"price": "￥19.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				19.90,
+				"(6.51折)",
+				39.00
+			],
+			"name": " 优鲨春秋款牛仔裤男青年直筒修身款男小脚裤休闲男士牛仔长裤潮 ",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满299减100 ",
+			"star": [
+				"90%",
+				"146"
+			],
+			"link": "森马官方旗舰店"
+		}, {
+			"id": 20170101009,
+			"bigImgSrc": "images/shoplist-pic4.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic4-sm1.jpg",
+				"images/shoplist-pic4-sm2.jpg",
+				"images/shoplist-pic4-sm1.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details41.jpg",
+					"images/details41-mid.jpg",
+					"images/details41-big.jpg"
+				],[
+					"images/details42.jpg",
+					"images/details42-mid.jpg",
+					"images/details42-big.jpg"
+				]
+			],
+			"price": "￥19.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				19.90,
+				"(6.51折)",
+				39.00
+			],
+			"name": " 优鲨春秋款牛仔裤男青年直筒修身款男小脚裤休闲男士牛仔长裤潮 ",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满299减100 ",
+			"star": [
+				"90%",
+				"146"
+			],
+			"link": "森马官方旗舰店"
+		}, {
+			"id": 20170101010,
+			"bigImgSrc": "images/shoplist-pic4.jpg",
+			"smallImgSrc": [
+				"images/shoplist-pic4-sm1.jpg",
+				"images/shoplist-pic4-sm2.jpg",
+				"images/shoplist-pic4-sm1.jpg"
+			],
+			"color":["red","black","white"],
+			"detailspic": [[
+					"images/details41.jpg",
+					"images/details41-mid.jpg",
+					"images/details41-big.jpg"
+				],[
+					"images/details42.jpg",
+					"images/details42-mid.jpg",
+					"images/details42-big.jpg"
+				]
+			],
+			"price": "￥19.90",
+			"size":["M","S","L","XL","XXL"],
+			"priceInfo": [
+				19.90,
+				"(6.51折)",
+				39.00
+			],
+			"name": " 优鲨春秋款牛仔裤男青年直筒修身款男小脚裤休闲男士牛仔长裤潮 ",
+			"search_hot": " 8.1-8.6 夏装清仓 专区满299减100 ",
+			"star": [
+				"90%",
+				"146"
+			],
+			"link": "森马官方旗舰店"
+		}
+	
+	]
+}

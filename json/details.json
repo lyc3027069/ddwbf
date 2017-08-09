@@ -1,0 +1,72 @@
+[
+	{
+		"20170101001": {
+			"normalPicSrc": "images/details1-mid.jpg",
+			"big-pic": "images/details1-big.jpg",
+			"db-side-box": [
+				"images/details1.jpg",
+				"images/details2.jpg"
+			],
+			"nameIofo": [
+				"森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款",
+				"8.1-8.6 夏装清仓 专区满199减100"
+			],
+			"messbox-info": [
+				"94%",
+				81
+			],
+			"price-info": [
+				44.90,
+				"(6.51折)",
+				69.00
+			],
+			"cuxiao-info": "满¥99减¥30，满¥199减¥100",
+			"color-code-src": [
+				"images/color-code.jpg",
+				"images/color-code.jpg",
+				"images/color-code.jpg"
+			],
+			"size": [
+				"S",
+				"M",
+				"L",
+				"XL",
+				"XXL"
+			]
+		},
+		"20170101002": {
+			"normalPicSrc": "images/details1-mid.jpg",
+			"big-pic": "images/details1-big.jpg",
+			"db-side-box": [
+				"images/details1.jpg",
+				"images/details2.jpg"
+			],
+			"nameIofo": [
+				"森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款",
+				"8.1-8.6 夏装清仓 专区满199减100"
+			],
+			"messbox-info": [
+				"94%",
+				81
+			],
+			"price-info": [
+				44.90,
+				"(6.51折)",
+				69.00
+			],
+			"cuxiao-info": "满¥99减¥30，满¥199减¥100",
+			"color-code-src": [
+				"images/color-code.jpg",
+				"images/color-code.jpg",
+				"images/color-code.jpg"
+			],
+			"size": [
+				"S",
+				"M",
+				"L",
+				"XL",
+				"XXL"
+			]
+		}
+	}
+]

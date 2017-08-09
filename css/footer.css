@@ -1,0 +1,24 @@
+footer {
+  height: 296px;
+  width: 100%;
+  border-top: 1px solid #CCC;
+  text-align: center;
+  color: #8c8c8c; }
+  footer span {
+    margin: 0 18px 0 20px; }
+  footer p {
+    font: 11px/81px "";
+    margin-top: 12px; }
+    footer p a {
+      color: #8c8c8c; }
+  footer div:nth-of-type(1) {
+    margin-bottom: 13px; }
+  footer div:nth-of-type(2),
+  footer div:nth-of-type(3) {
+    font: 11px/20px ""; }
+  footer div:nth-of-type(4) {
+    margin-top: 25px; }
+    footer div:nth-of-type(4) a {
+      margin-right: 5px; }
+
+/*# sourceMappingURL=footer.css.map */

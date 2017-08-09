@@ -1,0 +1,260 @@
+body {
+  background: #f6f9fb; }
+
+.margin {
+  width: 960px;
+  margin: 0 auto; }
+
+header {
+  height: 71px;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 3px solid #f07700;
+  background: #fff; }
+  header > a {
+    float: left;
+    margin: 20px 0 0 17px; }
+  header div {
+    position: relative;
+    float: right;
+    padding-right: 5px; }
+    header div ul {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 6;
+      font: 12px/22px "";
+      width: 430px;
+      height: 22px; }
+      header div ul li {
+        float: left;
+        font-size: 12px; }
+        header div ul li > i.iconfont {
+          font-family: "iconfont" !important;
+          font-size: 12px;
+          color: #ff5a00; }
+        header div ul li a {
+          color: #404040; }
+          header div ul li a:hover {
+            color: #ff5a00;
+            text-decoration: underline; }
+          header div ul li a i.iconfont {
+            font-family: "iconfont" !important;
+            font-size: 10px;
+            color: #949493; }
+        header div ul li span {
+          color: #bcbcbc; }
+      header div ul li.normal {
+        padding: 0 5px;
+        border: 1px solid #fff; }
+      header div ul li.line {
+        margin-top: 8.5px;
+        width: 1px;
+        height: 5px;
+        background: #bcbcbc; }
+      header div ul li.te {
+        border: 1px solid #ee7304;
+        background: #fff; }
+        header div ul li.te a:hover {
+          color: #ff5a00;
+          text-decoration: none; }
+      header div ul li.show dl {
+        display: none;
+        position: relative;
+        z-index: 10; }
+        header div ul li.show dl dd {
+          border-bottom: 1px solid #f5f4f4; }
+          header div ul li.show dl dd a:hover {
+            color: #ff5a00;
+            text-decoration: underline; }
+    header div p {
+      position: absolute;
+      top: 25px;
+      right: 10px;
+      z-index: 5;
+      width: 200px; }
+      header div p a {
+        color: #1a66b3; }
+
+#main {
+  padding-top: 40px; }
+  #main .shadow-box {
+    background-color: #ebeeef;
+    width: 950px;
+    position: relative;
+    margin-bottom: 40px;
+    height: 500px; }
+    #main .shadow-box .regsiter-box {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #fff;
+      width: 950px;
+      box-shadow: -1px 1px 1px #e8ebec; }
+      #main .shadow-box .regsiter-box .head {
+        height: 74px;
+        border-bottom: solid 1px #eceef2;
+        padding-right: 15px;
+        margin: 0 10px; }
+        #main .shadow-box .regsiter-box .head span {
+          display: none;
+          position: absolute;
+          top: 50px;
+          right: 10px;
+          width: 140px;
+          height: 22px;
+          line-height: 22px; }
+          #main .shadow-box .regsiter-box .head span a {
+            background-color: #9a9fa6;
+            color: #fff;
+            width: 44px;
+            height: 22px;
+            text-align: center;
+            margin-left: 9px;
+            display: inline-block;
+            border-radius: 2px; }
+            #main .shadow-box .regsiter-box .head span a:hover {
+              background-color: #8e96a0;
+              text-decoration: none; }
+        #main .shadow-box .regsiter-box .head .head_a {
+          position: absolute;
+          top: 28px;
+          left: 36px;
+          width: 135px;
+          height: 46px;
+          border: 1px solid #eceef2;
+          font: 14px/46px "";
+          text-align: center; }
+        #main .shadow-box .regsiter-box .head .head_a1 {
+          left: 183px;
+          background: #f5f5f5; }
+      #main .shadow-box .regsiter-box .help {
+        position: absolute;
+        top: 50px;
+        right: 10px; }
+        #main .shadow-box .regsiter-box .help a i.iconfont {
+          font-family: "iconfont" !important;
+          font-size: 12px;
+          color: #ff5a00; }
+        #main .shadow-box .regsiter-box .help a:hover {
+          color: #ff5a00; }
+      #main .shadow-box .regsiter-box table {
+        margin-top: 45px;
+        margin-bottom: 55px; }
+        #main .shadow-box .regsiter-box table tbody {
+          display: block;
+          width: 450px;
+          margin: 0 auto; }
+          #main .shadow-box .regsiter-box table tbody tr td {
+            position: relative; }
+            #main .shadow-box .regsiter-box table tbody tr td .iconfont.icon_yes {
+              font-family: "iconfont" !important;
+              font-size: 14px;
+              color: limegreen; }
+            #main .shadow-box .regsiter-box table tbody tr td .iconfont.icon_no {
+              font-family: "iconfont" !important;
+              font-size: 14px;
+              color: darkred; }
+            #main .shadow-box .regsiter-box table tbody tr td span.iconfont {
+              position: absolute;
+              top: 10px;
+              right: -25px; }
+            #main .shadow-box .regsiter-box table tbody tr td p {
+              height: 30px;
+              line-height: 30px; }
+              #main .shadow-box .regsiter-box table tbody tr td p span {
+                color: #969696;
+                display: none; }
+              #main .shadow-box .regsiter-box table tbody tr td p span.tip-error {
+                color: red; }
+            #main .shadow-box .regsiter-box table tbody tr td input {
+              width: 310px;
+              height: 36px;
+              border: 1px solid #e6e6e6;
+              border-radius: 3px;
+              padding-left: 5px; }
+            #main .shadow-box .regsiter-box table tbody tr td input.wrong {
+              border-color: red;
+              background-color: #fef0ef;
+              color: red; }
+              #main .shadow-box .regsiter-box table tbody tr td input.wrong::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: red; }
+              #main .shadow-box .regsiter-box table tbody tr td input.wrong:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: red;
+                opacity: 1; }
+              #main .shadow-box .regsiter-box table tbody tr td input.wrong::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: red;
+                opacity: 1; }
+              #main .shadow-box .regsiter-box table tbody tr td input.wrong:-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: red; }
+            #main .shadow-box .regsiter-box table tbody tr td #chb_agreement {
+              width: 12px;
+              height: 12px; }
+            #main .shadow-box .regsiter-box table tbody tr td #txt_vcode {
+              width: 160px;
+              margin-right: 5px; }
+            #main .shadow-box .regsiter-box table tbody tr td #vcodeWrap span {
+              padding: 10px 20px;
+              width: 84px;
+              height: 37px;
+              border: 1px solid #ccc; }
+            #main .shadow-box .regsiter-box table tbody tr td #submitRegister {
+              width: 180px;
+              height: 44px;
+              border-radius: 22px;
+              text-align: center;
+              display: block;
+              color: #fff;
+              background: #ff2832;
+              line-height: 44px;
+              font-size: 20px;
+              margin: 0 auto;
+              outline: none; }
+              #main .shadow-box .regsiter-box table tbody tr td #submitRegister:hover {
+                background: #f01923; }
+          #main .shadow-box .regsiter-box table tbody tr td.t {
+            font-size: 14px;
+            width: 338px;
+            padding-right: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #646464;
+            padding-top: 8px;
+            font-family: 'Microsoft YaHei';
+            _line-height: 24px; }
+          #main .shadow-box .regsiter-box table tbody tr td.txt-error input {
+            border-color: #ff4646;
+            background-color: #fef0ef;
+            color: #F00000; }
+          #main .shadow-box .regsiter-box table tbody tr td.txt-error p {
+            color: #f00000; }
+            #main .shadow-box .regsiter-box table tbody tr td.txt-error p span {
+              display: block; }
+
+footer footer {
+  height: 296px;
+  width: 100%;
+  border-top: 1px solid #CCC;
+  text-align: center;
+  color: #8c8c8c; }
+  footer footer span {
+    margin: 0 18px 0 20px; }
+  footer footer p {
+    font: 11px/81px "";
+    margin-top: 12px; }
+    footer footer p a {
+      color: #8c8c8c; }
+  footer footer div:nth-of-type(1) {
+    margin-bottom: 13px; }
+  footer footer div:nth-of-type(2),
+  footer footer div:nth-of-type(3) {
+    font: 11px/20px ""; }
+  footer footer div:nth-of-type(4) {
+    margin-top: 25px; }
+    footer footer div:nth-of-type(4) a {
+      margin-right: 5px; }
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="margin"></header>
+		<div id="main">
+			<div class="ad margin">
+				<img src="images/cart-ad.jpg" />
+			</div>
+			<div class="logo_line margin">
+				<div class="clear margin">
+					<div class="shopping_procedure"><span class="current">我的购物车</span><span>填写订单</span><span>完成订单</span></div>
+					<div class="logo">
+						<a href="index.html"><img src="images/dd_logo.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="addline">
+				<div class="add_line margin" id="district">
+					<div class="margin">
+						<div class="address" id="dp_adress">
+							<span class="icon_adr">&nbsp;</span>配送地址：
+							<div class="select_add">
+								<span class="text">北京市东城区</span>
+								<div class="area_pop" style="display: none;">
+									<a href="javascript:;" class="close"></a>
+									<ul class="tab">
+										<li id="ap_province" class="fn-show-province">
+											<a href="javascript:void(0)" id="selected_111">北京</a>
+										</li>
+										<li id="ap_city" class="fn-show-city">
+											<a href="javascript:district.show_city_init(this)" id="selected_1">北京市</a>
+										</li>
+										<li id="ap_area" class="fn-show-area choose">
+											<a href="javascript:district.show_area_init(this)" id="selected_1110101">东城区</a>
+										</li>
+										<li id="ap_village" style="display:none" class="fn-show-village">
+											<a href="javascript:district.show_village_init(this)" id="selected_0">请选择</a>
+										</li>
+									</ul>
+									<ul class="list list_notaligned fn-adress">
+										<li>
+											<a href="javascript:;" id="area_101">顺义区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_102">大兴区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_103">昌平区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_104">通州区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_11109">门头沟区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_11110">房山区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110101">东城区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110102">西城区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110103">崇文区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110104">宣武区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110105">朝阳区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110106">丰台区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110107">石景山区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110108">海淀区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110115">怀柔区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110116">平谷区</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110117">延庆县</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="area_1110118">密云县</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="margin" id="cart">
+
+				<ul class="shopping_title clear" id="j_carttitle">
+					<li class="f1">
+						<a id="j_selectall" href="javascript:;" class="checknow fn-checkall check_on"></a>全选</li>
+					<li class="f2">商品信息</li>
+					<li class="f3">单价（元）</li>
+					<li class="f4">数量</li>
+					<li class="f4">金额（元）</li>
+					<li class="f5">操作</li>
+				</ul>
+				<div class="fn-shops" id="J_cartContent">
+
+					<div class="fn-shop">
+						<!--<table border="0" cellspacing="0" cellpadding="0" class="shop_title">
+							<tbody>
+								<tr>
+									<td>
+										<a href="javascript:void(0)" dd_name="选中店铺" class="checknow fn-shop-checkall check_on">选中</a>
+									</td>
+									<td><span class="shop_icon store_o"></span></td>
+									<td>
+										<a href="details.html?" target="_blank">森马官方旗舰店</a>
+									</td>
+									<td>
+										<a data-item="8525" href="javascript:;" class="cse fn-imip"><img src="images/icon_cse.gif"></a>
+									</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>-->
+						<div class="shopping_list">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<!--<tbody>
+										<trclass="bb_none tree_line ">
+											<td class="row1">
+												<a href="javascript:void(0)" class="fn-product-check checknow check_on">选中</a>
+											</td>
+											<td class="row_img">
+												
+												<a href="details.html?id={{value.proID}}" target="_blank"> <img src="" width="80" height="80"> </a>
+												
+												<div style="display: none;" class="img_big">
+													<a href="" dd_name="查看详情" target="_blank"><img src="http://img3x5.ddimg.cn/60/10/1257401535-1_b_2.jpg"></a><span class="arrow"></span></div>
+											</td>
+											<td class="row_name">
+												<div class="name">
+													<a href="" title="森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款_深蓝8800,S" target="_blank" style="word-break:break-all;  word-wrap:break-word;">森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款_深蓝8800,S</a>
+												</div>
+												<div class="swatchsize">
+													<a href="javascript:;" class="btn fn-switchsize">修改</a><em>颜色:深蓝8800</em><em>尺码:S</em></div>
+											</td>
+											<td class="row3"><span>¥9.90</span>
+
+											</td>
+											<td data-minbuy="0" class="fn-count-tip row3 ">
+												<span class="amount fn-updatecount ">
+													<a href="javascript:void(0)" class="sub">-</a>
+													<input  value="1" type="text">
+													<a href="javascript:void(0)" class="add">+</a>
+												</span>
+											</td>
+											<td class="row4"><span>¥9.90</span></td>
+											<td class="row5 "><span><a href="javascript:void(0)"   class="fn-add-wish" >移入收藏</a></span><span><a href="javascript:void(0)"  class="fn-remove-product" >删除</a></span></td>
+											</tr>
+
+									</tbody>-->
+								<!--<tbody data-stock="11" data-offline="false" data-productid="1298099335" data-timestamp="1502092041000" data-orderforspupormo="0">
+									<tr id="tr_526256585" class="bb_none">
+										<td class="row1">
+											<a href="javascript:void(0)" data-item="526256585" class="fn-product-check checknow check_on">选中</a>
+										</td>
+										<td class="row_img">
+											<a href="" target="_blank" dd_name="查看详情"> <img onmouseout="$(this).parent().next().hide()" onmouseover="$(this).parent().next().show()" src="http://img3x5.ddimg.cn/49/30/1298099335-1_m_3.jpg" width="80" height="80"> </a>
+											<div style="display: none;" class="img_big">
+												<a href="" dd_name="查看详情" target="_blank"><img src="http://img3x5.ddimg.cn/49/30/1298099335-1_b_3.jpg"></a><span class="arrow"></span></div>
+										</td>
+										<td class="row_name">
+											<div class="name">
+												<a href="" title="森马短袖T恤 2017夏季新款 男士青少年学生个性表情印花半袖体恤_橙红6580,XL" target="_blank" dd_name="查看详情" style="word-break:break-all;  word-wrap:break-word;">森马短袖T恤 2017夏季新款 男士青少年学生个性表情印花半袖体恤_橙红6580,XL</a>
+											</div>
+											<div class="swatchsize">
+												<a dd_name="修改分色分码" href="javascript:;" class="btn fn-switchsize" data-mainproductid="1298098435" data-numimages="1" data-item="526256585" data-name="森马短袖T恤 2017夏季新款 男士青少年学生个性表情印花半袖体恤_橙红6580,XL" data-pid="1298099335">修改</a><em>颜色:橙红6580</em><em>尺码:XL</em></div>
+										</td>
+										<td class="row3"><span>¥39.90</span></td>
+										<td data-minbuy="0" class="fn-count-tip row3 "><span class="amount fn-updatecount " data-value="1"><a dd_name="减少数量" href="javascript:void(0)">-</a><input data-value="1" value="1" type="text"><a dd_name="增加数量" href="javascript:void(0)">+</a></span></td>
+										<td class="row4"><span class="red">¥39.90</span></td>
+										<td class="row5 "><span><a href="javascript:void(0)" data-cartitemid="526256585" data-productid="1298099335" data-mainproductid="1298098435" data-productname="森马短袖T恤 2017夏季新款 男士青少年学生个性表情印花半袖体恤_橙红6580,XL" data-saleprice="39.9" data-categorypath="58.71.06.00.00.00" data-item-detail="{&quot;cartItemId&quot;:526256585,&quot;productId&quot;:1298099335,&quot;mainProductId&quot;:1298098435,&quot;productName&quot;:&quot;森马短袖T恤 2017夏季新款 男士青少年学生个性表情印花半袖体恤_橙红6580,XL&quot;,&quot;salePrice&quot;:39.9,&quot;categoryPath&quot;:&quot;58.71.06.00.00.00&quot;}" class="fn-add-wish" dd_name="加入收藏按钮">移入收藏</a></span><span><a href="javascript:void(0)" data-item="526256585" class="fn-remove-product" dd_name="删除普通品">删除</a></span></td>
+									</tr>
+								</tbody>-->
+								<!--<tfoot>
+									<tr class="total">
+										<td class="row1">&nbsp;</td>
+										<td class="row_img">店铺合计</td>
+										<td colspan="2" class="intro">购买店铺商品，再买59.10元，可减<b class="red">20.00</b>元</td>
+										<td colspan="3" class="row4"><span class="red big ooline alignright">¥49.80</span></td>
+									</tr>
+								</tfoot>-->
+							</table>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div style="position: static; bottom: -20px; z-index: 101; width: 100%; left: 0px;">
+				<div class="shopping_total" id="J_totalMoneyBlock">
+					<div class="shopping_total_right">
+						<a class="total_btn fn-checkout" href="javascript:;" id="checkout_btn" dd_name="结算">结&nbsp;&nbsp;算</a>
+						<div class="subtotal">
+							<p><span class="cartsum">总计(不含运费)：</span><span id="payAmount" class="price"></span></p>
+
+							<p><span class="cartsum">已节省：</span><span id="totalFavor">¥0.00</span></p>
+						</div>
+
+					</div>
+					<div class="shopping_total_left" id="J_leftBar">
+						<a id="j_selectall2" href="javascript:void(0)" class="checknow fn-checkall check_on" dd_name="全选">选中</a>全选
+						<!--<a id="j_removeproducts" href="javascript:void(0)" class="fn-batch-remove" dd_name="批量删除按钮">批量删除</a>-->
+						<!--<span>已选择<font color="red">2</font>件商品</span>-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//(function($) {
+				//$.ajaxSettings.async = false;
+				//})(jQuery);
+				//显示顶部下拉菜单
+
+				$("header").load('top.html', function() {
+					$("#tools ul li.show").mouseover(function() {
+
+						$(this).addClass("te").find("dl").css("display", "block").prev().find("i").html("&#xe64d;&nbsp;&nbsp;");
+					});
+					$("#tools ul li.show").mouseout(function() {
+						$(this).removeClass("te").find("dl").css("display", "none").prev().find("i").html("&#xe690;&nbsp;&nbsp;");
+					});
+
+					var str = getCookie("cart");
+					if(str == undefined) {
+						var arr = [];
+					} else {
+						var arr = JSON.parse(str);
+					}
+					var sum = 0;
+					for(var i = 0; i < arr.length; i++) {
+						sum += parseInt(arr[i].num);
+					}
+					$("#cart-num").html(sum);
+				});
+				$("footer").load('footer.html');
+				$(".select_add").click(function(){
+					$(this).find(".area_pop").css("display","block");
+					
+				});
+				$(".close").click(function(){
+						$(this).parent().css("display","none");
+						event.stopPropagation(); 
+				});
+				$(".fn-adress li a").click(function(){
+					$(this).parents(".area_pop").css("display","none");
+					$(".select_add .text").html("北京市"+$(this).html());
+					event.stopPropagation();
+				})
+				$.get("json/list.json", function(data) {
+					var str = getCookie("cart");
+
+					if(str == undefined) {
+						//购物车为空
+					} else {
+						var arr = JSON.parse(str);
+						var objdata = {};
+						var html = "";
+						for(var i = 0; i < arr.length; i++) {
+							var id = arr[i].proID;
+							for(var j = 0; j < data.shoppinginfo.length; j++) {
+								if(data.shoppinginfo[j].id == arr[i].proID) {
+									html += "<tbody><trclass='bb_none tree_line '><td class='row1'><a href='javascript:void(0)' class='fn-product-check checknow check_on'>选中</a></td>	<td class='row_img'><a href='details.html?id=" + arr[i].proID +
+										"' target='_blank'><img src='" + data.shoppinginfo[j].bigImgSrc + "' width='80' height='80'></a><div style='display: none;' class='img_big'><a href='' dd_name='查看详情' target='_blank'><img src='" + data.shoppinginfo[j].bigImgSrc +
+										"'></a><span class='arrow'></span></div></td><td class='row_name'><div class='name'><a href='' title='' target='_blank' style='word-break:break-all;  word-wrap:break-word;'>" + data.shoppinginfo[j].name +
+										"_" + arr[i].color + "," + arr[i].size + "</a></div><div class='swatchsize'><a href='javascript:;' class='btn fn-switchsize'>修改</a><em>颜色:深蓝8800</em><em>尺码:S</em></div></td><td class='row3'><span>" + data.shoppinginfo[j].price +
+										"</span></td><td data-minbuy='0'class='fn-count-tip row3 '><span class='amount fn-updatecount '><a href='javascript:void(0)' class='sub' dd-proid=" + arr[i].proID + " dd-color=" + arr[i].color + " dd-size=" + arr[i].size + ">-</a><input  value='" + arr[i].num + "' type='text'><a href='javascript:void(0)' class='add' dd-proid=" + arr[i].proID + " dd-color=" + arr[i].color + " dd-size=" + arr[i].size + ">+</a></span></td><td class='row4'><span>￥" + (parseFloat(data.shoppinginfo[j].price.replace(/^￥/g, "")) * arr[i].num ).toFixed(2)+
+										"</span></td><td class='row5 '><span><a href='javascript:void(0)'   class='fn-add-wish' ></a></span><span><a href='javascript:void(0)'  class='fn-remove-product' dd-proid=" + arr[i].proID + " dd-color=" + arr[i].color + " dd-size=" + arr[i].size + ">删除</a></span></td></tr></tbody>";
+
+								}
+							}
+
+						}
+						$(".shopping_list table").html(html);
+					}
+					//总额计算
+					function moneyZ() {
+						var money = 0;
+						$(".row4 span").each(function() {
+							if($(this).parents(".row4").siblings(".row1").find("a.checknow").hasClass("check_on")) {
+								console.log("ee");
+								money += parseFloat($(this).html().replace(/^￥/g, ""));
+							}
+						});
+						console.log(money);
+						$("#payAmount").html("￥" + money.toFixed(2));
+					}
+					moneyZ();
+					
+					//勾选按钮
+					$(".checknow").click(function() {
+						if($(this).hasClass("check_on")) {
+							$(this).removeClass("check_on");
+							$(".fn-checkall").removeClass("check_on");
+							if($(this).hasClass("fn-checkall")) {
+								$(".checknow").each(function() {
+									$(this).removeClass("check_on");
+								})
+							}
+
+						} else {
+							$(this).addClass("check_on");
+							var flag = false;
+							var num=0;
+							$(".checknow.fn-product-check").each(function() {
+								if($(this).hasClass("check_on")) {
+									num++;
+								}
+							})
+							console.log($(".checknow.fn-product-check").length);
+							if($(".checknow.fn-product-check").length==num){
+								$(".fn-checkall").addClass("check_on");
+							}
+							if($(this).hasClass("fn-checkall")) {
+								$(".checknow").each(function() {
+									$(this).addClass("check_on");
+								})
+							}
+
+						}
+						moneyZ();
+					});
+					//增加减少数量
+					$(".add").click(function() {
+						var value = parseInt($(this).siblings("input").val());
+
+						if(value == 1) {
+							$(this).siblings(".del").removeClass("disabled");
+						}
+						$(this).siblings("input").val(value + 1);
+
+						var price = $(this).parents(".fn-count-tip").siblings(".row3").find("span").html();
+						price = (parseFloat(price.replace(/^￥/g, "")) * (value + 1)).toFixed(2);
+						$(this).parents(".fn-count-tip").siblings(".row4").find("span").html("￥" + price);
+						moneyZ();
+						var str = getCookie("cart");
+						var arr = JSON.parse(str);
+						for(var i = 0; i < arr.length; i++) {
+							if(arr[i].proID == $(this).attr("dd-proid") && arr[i].color == $(this).attr("dd-color") && arr[i].size == $(this).attr("dd-size")) {
+
+								arr[i].num=$(this).siblings("input").val();
+								//console.log(obj, arr);
+							}
+						}
+						var objToStr = JSON.stringify(arr);
+						setCookie("cart", objToStr, 7);
+						
+					});
+					$(".sub").click(function() {
+
+						var value = parseInt($(this).siblings("input").val());
+						if(value != 1) {
+
+							if(value == 2) {
+								$(this).addClass("disabled");
+							}
+							$(this).siblings("input").val(value - 1);
+							var price = $(this).parents(".fn-count-tip").siblings(".row3").find("span").html();
+							price = (parseFloat(price.replace(/^￥/g, "")) * (value - 1)).toFixed(2);
+							$(this).parents(".fn-count-tip").siblings(".row4").find("span").html("￥" + price);
+						}
+						moneyZ();
+						var str = getCookie("cart");
+						var arr = JSON.parse(str);
+						for(var i = 0; i < arr.length; i++) {
+							if(arr[i].proID == $(this).attr("dd-proid") && arr[i].color == $(this).attr("dd-color") && arr[i].size == $(this).attr("dd-size")) {
+
+								arr[i].num=$(this).siblings("input").val();
+								//console.log(obj, arr);
+							}
+						}
+						var objToStr = JSON.stringify(arr);
+						setCookie("cart", objToStr, 7);
+					});
+					//删除商品
+					$(".fn-remove-product").click(function() {
+						$(this).parents("tbody").remove();
+						var str = getCookie("cart");
+						var arr = JSON.parse(str);
+						for(var i = 0; i < arr.length; i++) {
+							if(arr[i].proID == $(this).attr("dd-proid") && arr[i].color == $(this).attr("dd-color") && arr[i].size == $(this).attr("dd-size")) {
+
+								arr.splice(i, 1);
+								//console.log(obj, arr);
+							}
+						}
+						var objToStr = JSON.stringify(arr);
+						setCookie("cart", objToStr, 7);
+						moneyZ();
+					});
+					
+				});
+			});
+		</script>
+	</body>
+
+</html>

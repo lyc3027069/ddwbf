@@ -1,0 +1,120 @@
+#tools {
+        height: 34px;
+        background: #f9f9f9;
+        border-bottom: 2px solid #f2f2f2;
+        .top-l {
+            float: left;
+
+        }
+        .top-r {
+            position: relative;
+            float: right;
+            padding-right: 5px;
+
+            ul {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 6;
+                font: 12px/34px "";
+                width: 700px;
+                height: 22px;
+                li {
+                    position: relative;
+                    color: #646464;
+                    float: left;
+                    font-size: 12px;
+                    dl.subnav {
+                        display: none;
+                        position: absolute;
+                        top: 34px;
+                        background: #fff;
+                        box-shadow: 0 0 1px 1px #ccc;
+                        dd {
+                            text-align: center;
+                            height: 160px;
+                            width: 210px;
+                            .erweima {
+                                float: left;
+                                width: 105px;
+
+                                span {
+                                    display: block;
+                                }
+                                img {}
+                            }
+                        }
+                    }
+                    > i.iconfont {
+                        font-family: "iconfont" !important;
+                        font-size: 12px;
+                        color: #ff5a00;
+                        //  font-style: normal;
+                        //  -webkit-font-smoothing: antialiased;
+                        //  -webkit-text-stroke-width: 0.2px;
+                        //  -moz-osx-font-smoothing: grayscale;
+                    }
+                    > a {
+                        color: #404040;
+                        &:hover {
+                            color: #ff5a00;
+
+                        }
+                        i.iconfont {
+                            font-family: "iconfont" !important;
+                            font-size: 10px;
+                            color: #949493;
+                        }
+                    }
+
+                    > span {
+                        //                      color: #bcbcbc;
+
+                    }
+                    dl {
+                        dd {
+                            padding: 0 5px;
+                        }
+                    }
+                }
+                li.vcode {
+                    &:hover {
+                        background: #fff;
+                        border: 1px solid #ccc;
+                        dl {
+                            display: block;
+                        }
+
+                    }
+
+                }
+                li.line {
+                    margin-top: 14.5px;
+                    width: 1px;
+                    height: 5px;
+                    background: #bcbcbc;
+                }
+                li.te {
+                    border: 1px solid #e6e6e6;
+                    background: #fff;
+                    dl dd:hover {
+                        background: #f2f2f2;
+
+                    }
+                }
+                li.normal{
+                    border: 1px solid #f9f9f9;
+                }
+                li.show {
+                    dl {
+
+                        display: none;
+                        position: relative;
+                        z-index: 10;
+
+                    }
+                }
+            }
+
+        }
+    }

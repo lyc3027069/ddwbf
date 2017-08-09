@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="margin">
+			<a href="index.html"><img src="images/logo.png" /></a>
+			<div>
+				<ul>
+					<li class="normal"><i class="iconfont">&#xe602;</i>
+						<a href="cart.html">购物车</a>
+					</li>
+					<li class="line"></li>
+					<li class="normal">
+						<a href="javascript:;">我的订单</a>
+					</li>
+					<li class="line"></li>
+					<li class="normal show">
+						<a href="index.html">我的当当<i class="iconfont">&#xe690;</i></a>
+						<dl>
+							<dd>
+								<a href="javascript:;">我的订单</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">购物礼券</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">我的积分</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">我的收藏</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">我的评论</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">数学商品</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="line"></li>
+					<li class="normal show">
+						<a href="javascript:;">礼品卡<i class="iconfont">&#xe690;</i></a>
+						<dl>
+							<dd>
+								<a href="javascript:;">购买</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">激活</a>
+							</dd>
+
+						</dl>
+					</li>
+					<li class="line"></li>
+					<li class="normal">
+						<a href="javascript:;">手机当当</a>
+					</li>
+					<li class="line"></li>
+					<li class="normal">
+						<a href="javascript:;">企业销售</a>
+					</li>
+					<li class="line"></li>
+					<li class="normal">
+						<a href="javascript:;">帮助</a>
+					</li>
+
+				</ul>
+				<p>欢迎光临当当网，请
+					<a href="login.html">登录</a>
+					<a href="register.html">免费注册</a>
+				</p>
+
+			</div>
+
+		</header>
+		<div id="main" class="margin">
+			<div class="shadow-box">
+				<div class="regsiter-box">
+					<div class="head">
+						<span class="more">欢迎光临当当网<a href="https://login.dangdang.com/">请登录</a></span>
+						<a href="javascript:;" class="head_a">新用户注册</a>
+						<a href="javascript:;" class="head_a head_a1">企业用户注册</a>
+					</div>
+					<div class="help">
+						<a href="index.html"><i class="iconfont">&#xe605;</i>当当首页</a>
+						<a href="javascript:;">注册帮助</a>
+
+					</div>
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tbody>
+							<tr>
+								<td class="t">手机号码</td>
+								<td class="">
+									<input maxlength="11" name="txt_username" id="txt_username" autocomplete="off" maxlength="40" tabindex="1" value="" placeholder="请输入您的手机号码" type="text" class="text">
+									<span id="spn_username_ok" class="iconfont"></span>
+									<p id="J_tipUsername" class="cue"><span style="display: block;">手机号可用于登录、找回密码、接收订单通知等服务</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="t">登录密码</td>
+								<td>
+									<input maxlength="20" name="txt_password" id="txt_password" onpaste="return false;" tabindex="2" type="password" class="text" maxlength="20">
+									<span id="spn_password_ok" class="iconfont"></span>
+									<p id="J_tipPassword" class="cue"><span>密码为6-20个字符，可由英文、数字及符号组成</span></p>
+
+								</td>
+							</tr>
+							<tr>
+								<td class="t">确认密码</td>
+								<td>
+									<input maxlength="20" id="txt_repassword" name="txt_repassword" onpaste="return false" tabindex="3" type="password" class="text" maxlength="20">
+									<span id="spn_repassword_ok" class="iconfont"></span>
+									<p id="J_tipSurePassword" class="cue"><span>请再次输入密码</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="t">验证码</td>
+								<td>
+									<input class="text pin" type="text" id="txt_vcode" name="txt_vcode" placeholder="请输入验证码" maxlength="4">
+									<a class="code_pic" id="vcodeWrap" name="change_code_img" href="javascript:;">
+
+										<span>1234</span>
+										<!--<img id="imgVcode" title="点击更换验证码" alt="点击更换验证码" width="84" height="37" src="">-->
+									</a>
+									<a id="vcodeBtn" name="change_code_link" class="code_picww" href="javascript:;">换张图</a>
+									<span id="spn_vcode_ok" class="iconfont" style="display: block;"></span>
+									<p id="J_tipVcode" class="cue"><span>请填写图片中的字符，不区分大小写</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="t">&nbsp;</td>
+								<td class="clause">
+									<span class="float_l">
+											<input  type="checkbox" id="chb_agreement" name="chb_agreement" checked="checked">我已阅读并同意
+											<a target="_blank" href="#" tabindex="8">《当当交易条款》</a>和
+											<a target="_blank" href="" tabindex="9">《当当社区条款》</a>
+										</span>
+									<p id="J_tipAgreement" class="cue"></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="t">&nbsp;</td>
+								<td>
+									<a id="submitRegister" href="javascript:void(0);" class="btn_login" tabindex="10">立即注册</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<script type="text/javascript">
+			$("footer").load('footer.html');
+			$("header ul li.show").mouseover(function() {
+				$(this).addClass("te").find("dl").css("display", "block").prev().find("i").html("&#xe64d;");
+			})
+			$("header ul li.show").mouseout(function() {
+				$(this).removeClass("te").find("dl").css("display", "none").prev().find("i").html("&#xe690;");
+			})
+			//jquery验证手机号码 
+			$("#txt_username").blur(function() {
+				if($("#txt_username").val() != "") {
+					if(!$(this).val().match(/^(((13[0-9]{1})|159|153)+\d{8})$/)) {
+						addWrong($(this), "手机号码格式不正确！")
+					} else {
+						addTrue($(this), "asd");
+					}
+				} else {
+					$(this).css("border-color", "#e6e6e6");
+				}
+			}).focus(function() {
+				//手机号可用于登录、找回密码、接收订单通知等服务
+				removeWrong($(this), "手机号可用于登录、找回密码、接收订单通知等服务");
+			})
+			$("#txt_password").blur(function() {
+				if($(this).val().length >= 6 && $(this).val().length <= 20 && $(this).val() != '') {
+					//验证密码强度
+					//console.log("qweqwe");
+					addTrue($(this), "密码强调验证");
+				} else if($(this).val() == '') {
+					$(this).css("border-color", "#e6e6e6");
+					$(this).siblings("p").find("span").css("display", "none");
+				} else {
+					addWrong($(this), "密码长度6-20个字符，请重新输入！")
+				}
+			}).focus(function() {
+
+				$(this).siblings("p").find("span").css("display", "block").html("密码为6-20个字符，可由英文、数字及符号组成")
+				removeWrong($(this));
+			})
+			$("#txt_repassword").blur(function() {
+				if($(this).val() == $("#txt_password").val() && $(this).val() != '') {
+					//验证密码强度
+					//console.log($(this).val() == $("#txt_repassword").val(), $(this).val(), $("#txt_repassword").val());
+					addTrue($(this), "");
+				} else if($(this).val() == '') {
+					$(this).css("border-color", "#e6e6e6");
+					$(this).siblings("p").find("span").css("display", "none");
+				} else {
+					addWrong($(this), "两次输入的密码不一致，请重新输入")
+				}
+			}).focus(function() {
+				//手机号可用于登录、找回密码、接收订单通知等服务
+				removeWrong($(this), "请再次输入密码");
+			})
+			$("#vcodeWrap span").html(getVerCode());
+			$("#vcodeBtn").click(function() {
+				$("#vcodeWrap span").html(getVerCode());
+			})
+			$("#txt_vcode").blur(function() {
+				if($(this).val() == $(this).next().find("span").html() && $(this).val() != '') {
+					addTrue($(this), "");
+				} else if($(this).val() == '') {
+					$(this).css("border-color", "#e6e6e6");
+					$(this).siblings("p").find("span").css("display", "none");
+				} else {
+					addWrong($(this), "图形验证码输入错误，请重新输入")
+				}
+			}).focus(function() {
+				//手机号可用于登录、找回密码、接收订单通知等服务
+				removeWrong($(this), "请填写图片中的字符，不区分大小写");
+			})
+			//var arr = []; //用来存放用户名和密码
+			$("#submitRegister").click(function() {
+				var flag = true;
+				$("td>span").not(".float_l").each(function() {
+					if($(this).attr("class") != "iconfont icon_yes") {
+						flag = false;
+					}
+
+				});
+				if(flag) {
+					var str = getCookie("user-pass");
+					if(str == undefined) {
+						var obj = [];
+					} else {
+						var obj = JSON.parse(str);
+					}
+//					for(var i=0;i<obj.length;i++){
+//						if(obj[i].name==)
+//					}
+					obj.push({"name": $("#txt_username").val(),	"value": $("#txt_password").val()});
+					var objToStr = JSON.stringify(obj);
+					setCookie("user-pass", objToStr, 7);
+					window.location.href="login.html";
+				}
+				//console.log(flag);
+			})
+
+			function addTrue(my, str) {
+				//条件符合
+				my.siblings("span").addClass("icon_yes").html("&#xe6f4;");
+				my.siblings("p").find("span").html(str);
+				my.css("border-color", "#e6e6e6");
+			}
+
+			function removeWrong(my, str) {
+				//移除错误
+				my.siblings("p").find("span").css("display", "block").html(str);
+				my.css("border-color", "#9A9FA6");
+				my.removeClass("wrong").siblings("span").removeClass("icon_no").addClass("icon_yes").html("").siblings("p").find("span").removeClass("tip-error");
+			}
+
+			function addWrong(my, str) {
+				//遇到错误
+				my.siblings("p").find("span").html(str);
+				my.addClass("wrong").siblings("span").addClass("icon_no").html("&#xe621;").siblings("p").find("span").addClass("tip-error");
+				my.css("border-color", "red");
+			}
+
+			
+
+			function removeCookie(name) {
+				//删除cookie，把生命期设为过期时间
+				setCookie(name, 1, -1);
+			}
+		</script>
+	</body>
+
+</html>

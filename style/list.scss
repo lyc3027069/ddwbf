@@ -1,0 +1,758 @@
+footer {
+    @import "footer";
+}
+header {
+    @import "header";
+}
+.margin {
+    width: 1200px;
+    margin: 0 auto;
+}
+#main {
+    font: 12px 'Hiragino Sans GB',"simsun","Arial";
+    .subnav {
+        background: #f5f5f5;
+        ul {
+            height: 31px;
+            margin: 0 auto;
+            overflow: hidden;
+            line-height: 30px;
+            width: 1200px;
+            li {
+                float: left;
+                padding: 0 15px;
+                margin-left: -1px;
+                white-space: nowrap;
+                background: url("../images/sub_line_bg.png") right center no-repeat;
+                a {
+
+                    color: #646464;
+                }
+            }
+        }
+    }
+    .list-head {
+        .ad-img {
+            a {
+                margin-top: 10px;
+                display: block;
+                img {}
+            }
+        }
+        .top {
+            line-height: 32px;
+            width: 1180px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1001;
+            padding: 10px 0 10px 10px;
+            overflow: hidden;
+            .t-left {
+                float: left;
+                > a {
+                    color: #404040;
+                    display: block;
+                    float: left;
+                    font-family: Microsoft YaHei;
+
+                }
+                > span {
+                    font-family: 'Hiragino Sans GB',"Simsun";
+                    margin: 0 6px;
+                    display: block;
+                    float: left;
+                    color: #b6b4b4;
+
+                }
+                span.total {
+                    color: #646464;
+                    margin-left: 20px;
+                    font-family: "MicroSoft YaHei";
+                    white-space: nowrap;
+                    em {
+                        color: #ff2832;
+                    }
+                }
+            }
+        }
+        .bottom {
+            font-family: Arial,'Hiragino Sans GB',"Simsun",sans-serif;
+            position: relative;
+            z-index: 1000;
+            width: 1200px;
+            border-top: 1px solid #e4e4e4;
+            margin: 0 auto 20px;
+            .table-list {
+                border-top: 1px solid #fff;
+                width: 1200px;
+                background-color: #fef8f5;
+                overflow: hidden;
+                position: relative;
+                > li {
+                    border-bottom: 1px dotted #eeeceb;
+                    width: 1200px;
+                    position: relative;
+                    vertical-align: top;
+                    overflow: hidden;
+                    .list-le {
+                        width: 71px;
+                        float: left;
+                        padding: 9px 0 0 12px;
+                        color: #999;
+                        line-height: 18px;
+                        height: 18px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .list-ri {
+                        width: 1080px;
+                        float: left;
+                        padding: 4px 2px 4px 35px;
+                        position: relative;
+                        background-color: #fff;
+                        .list-ri-con {
+                            padding-right: 85px;
+                            overflow: hidden;
+                            > span {
+                                width: 125px;
+
+                                position: relative;
+                                height: 22px;
+                                float: left;
+                                padding: 3px 10px 3px 0;
+                                > a {
+                                    width: 98px;
+                                    display: inline-block;
+                                    padding: 0 19px 0 5px;
+                                    line-height: 20px;
+                                    height: 20px;
+                                    border: 1px solid #fff;
+                                    color: #555;
+                                    &:hover{
+                                        color: red;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .list-ri-con.pic {
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            .img-list {
+                                width: 946px;
+                                height: 105px;
+                                position: relative;
+                                overflow: hidden;
+                                top: 1px;
+                                ul {
+                                    padding-top: 1px;
+                                    overflow: hidden;
+                                    li {
+                                        float: left;
+                                        width: 104px;
+                                        height: 51px;
+                                        margin: -1px -1px 0 0;
+                                        border: 1px solid #d8d8d8;
+                                        padding: 0;
+
+                                        a {
+                                            display: block;
+                                            padding: 0;
+                                            background: #fff;
+                                            height: 49px;
+                                            width: 102px;
+                                            line-height: 48px;
+                                            text-align: center;
+                                            font-family: "Microsoft Yahei";
+                                            position: relative;
+                                            border: 1px solid #fff;
+                                            overflow: hidden;
+                                            img {
+                                                display: block;
+                                                position: absolute;
+                                                left: 16px;
+                                                top: 5px;
+                                                width: 76px;
+                                                height: 40px;
+
+                                            }
+                                            i {}
+                                            &:hover {
+                                                border: 1px solid #ff2832;
+                                                img {
+                                                    display: none;
+                                                }
+                                                i {
+                                                    display: block;
+                                                    padding: 0;
+                                                    background: #fff;
+                                                    height: 47px;
+                                                    width: 100px;
+                                                    color: red;
+                                                    line-height: 48px;
+                                                    text-align: center;
+                                                    font-family: "Microsoft Yahei";
+                                                    position: relative;
+                                                    border: 1px solid #ff2832;
+                                                    overflow: hidden;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        > a.more {
+                            display: block;
+                            background: url("../images/btn_bg.png") right 5px no-repeat;
+                            //background-position: right -38px;
+                            width: 25px;
+                            height: 18px;
+                            line-height: 18px;
+                            position: absolute;
+                            right: 10px;
+                            top: 9px;
+                            padding: 0 11px 0 0;
+                            color: #666;
+
+                        }
+                        > a.btn-choose {
+                            background: url("../images/btn_bg.png") -7 0 no-repeat;
+
+                            width: 25px;
+                            height: 18px;
+                            line-height: 18px;
+                            position: absolute;
+                            right: 61px;
+                            top: 9px;
+                            padding-left: 13px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        .tools-box {
+            background: #fe7c2c;
+            position: relative;
+            z-index: 999;
+            width: 1200px;
+            margin: 0 auto;
+            .top2 {
+                margin: 0;
+                padding: 0;
+                height: 30px;
+                border: solid 1px #efefef;
+                line-height: 30px;
+                background-color: #f5f5f5;
+                ul.sort {
+                    float: left;
+                    > li {
+                        background: url("../images/tools_box_bg.png");
+                        float: left;
+                        background-position: right -97px;
+                        cursor: pointer;
+                        margin-left: -1px;
+                        background-repeat: no-repeat;
+                        height: 30px;
+                        > a {
+                            display: block;
+                            text-align: center;
+                            padding: 2px 10px 0;
+                            line-height: 28px;
+                            font-size: 12px;
+                            span.icon {
+                                background: url("../images/tools_box_bg.png");
+                                display: inline-block;
+                                height: 11px;
+                                width: 7px;
+                                background-position: 0 -195px;
+                                margin-left: 5px;
+                                overflow: hidden;
+                                vertical-align: middle;
+                            }
+                        }
+                        div.interval {
+                            text-align: left;
+                            padding: 2px 5px 0;
+                            .inner {
+                                padding: 0;
+                                text-align: left;
+                                margin-left: 5px;
+                                input {
+                                    border: solid 1px #e1e1e1;
+                                    padding: 2px 0 2px 13px;
+                                    margin: 0;
+                                    line-height: 18px;
+                                    height: 18px;
+                                    width: 34px;
+                                    color: #878787;
+                                    outline: none;
+                                    background: #fff url("../images/tools_box_bg.png") -45px -169px no-repeat;
+                                }
+                                span {
+                                    padding: 0 2px;
+                                    color: #d7d7d7;
+                                }
+                            }
+                        }
+                        .select-box {
+                            float: left;
+                            height: 24px;
+                            line-height: 20px;
+                            position: relative;
+                            z-index: 100;
+                            padding: 3px 0;
+                            width: 126px;
+                            span {
+                                text-align: center;
+                                cursor: pointer;
+                                height: 22px;
+                                line-height: 22px;
+                                border: 1px solid #e1e1e1;
+                                padding: 0 6px 0 0;
+                                background: url("../images/btn_bg.png") right -173px no-repeat;
+                                background-color: #fff;
+                                display: inline-block;
+                                width: 58px;
+                                color: #666;
+                            }
+
+                            .select-pop {
+                                display: none;
+                                width: 326px;
+                                position: absolute;
+                                left: 0;
+                                top: 26px;
+                                border: 1px solid #f0f0f0;
+                                background: #fff;
+                                padding: 0;
+                                font-size: 12px;
+                                z-index: 9999;
+                                cursor: default;
+                                box-shadow: 1px 2px 2px #eee;
+                                .head {
+                                    height: 5px;
+                                    line-height: 20px;
+                                    font-weight: bold;
+                                    padding: 0 10px 0 13px;
+                                    text-align: left;
+                                    font-size: 12px;
+                                    color: #757575;
+                                    margin-top: 5px;
+                                }
+                                ul {
+                                    padding: 0 0 10px 9px;
+                                    li {
+                                        float: left;
+                                        width: 50px;
+                                        line-height: 24px;
+                                        height: 24px;
+                                        white-space: nowrap;
+                                        a {
+                                            border: solid 1px #fff;
+                                            border-width: 1px 0;
+                                            padding: 0 10px 0 5px;
+                                            display: block;
+                                            text-decoration: none;
+                                            color: #757575;
+                                            &:hover {
+                                                color: red;
+                                                text-decoration: underline;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .select-pop {
+                                    display: block;
+                                }
+
+                            }
+                        }
+                    }
+                    li.on {
+                        display: block;
+                        text-align: center;
+                        padding: 2px 10px 0;
+                        line-height: 28px;
+                        font-size: 12px;
+                        a {
+                            color: #fd5115;
+                        }
+                    }
+                    li.tools-float {}
+                }
+                .bottom2 {
+                    height: 30px;
+                    line-height: 30px;
+                    border-top: 0;
+                    float: left;
+                    position: relative;
+                    ul {
+                        width: 340px;
+                        height: 30px;
+                        overflow: hidden;
+                        margin-left: 10px;
+                        padding: 1px 0 0 11px;
+                        position: relative;
+                        cursor: pointer;
+                        li {
+                            height: 14px;
+                            line-height: 14px;
+                            vertical-align: middle;
+                            float: left;
+                            padding: 8px 16px 8px 0;
+                            overflow: hidden;
+                            input {
+                                float: left;
+                                margin-top: 0;
+                            }
+
+                        }
+                    }
+                }
+                .bottom2.bottom2-inner {
+                    height: 30px;
+                    line-height: 30px;
+                    border-top: 0;
+                    float: left;
+                    position: relative;
+                    .opt {
+                        position: absolute;
+                        left: 10px;
+                        top: 0;
+                        background: #fff;
+                        width: 340px;
+                        padding: 0 0 0 10px;
+                        box-shadow: -2px 0 1px rgba(238,238,238,0.5), 0 2px 1px rgba(238,238,238,0.5), 2px 0 1px rgba(238,238,238,0.5);
+                        border: 1px solid #f0f0f0;
+                        height: auto;
+                        overflow: visible;
+                        margin-left: 0;
+                        li:hover {
+                            color: red;
+                        }
+                    }
+                }
+                .data {
+                    float: right;
+                    padding-right: 6px;
+                    padding-top: 9px;
+                    height: 24px;
+                    line-height: 15px;
+                    .or {
+                        color: #fd5115;
+                    }
+                    a {
+                        background: url("../images/tools_box_bg.png");
+                        display: inline-block;
+                        width: 16px;
+                        height: 17px;
+                        line-height: 0;
+                        vertical-align: middle;
+                        background-position: 5px -62px;
+                        margin: -5px 4px 0;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                        background-color: #dcdcdc;
+
+                    }
+                    a:last-child {
+                        background-position: -7px -62px;
+                        background-color: #fd5115;
+                    }
+                }
+                .switch {
+                    width: 108px;
+                    overflow: hidden;
+                    float: right;
+                    margin: 5px 2px 0 0;
+                    line-height: 22px;
+                    a {
+                        float: left;
+                        width: 30px;
+                        padding: 0 0 0 15px;
+                        text-decoration: none;
+                        height: 22px;
+                        line-height: 23px;
+                        text-align: center;
+                        position: relative;
+                        overflow: hidden;
+                        color: #969696;
+                        padding-left: 20px;
+                        span {
+                            top: 5px;
+                            left: 5px;
+                            margin: -2px 2px 0 0;
+                            position: absolute;
+                            width: 15px;
+                            height: 16px;
+                            background: url("../images/tools_box_new_bg.png") 0 -35px;
+                        }
+                        span.list-1 {
+                            background-position: 0 -14px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    .list-con {
+        overflow: hidden;
+        .list-con-le {
+            float: left;
+            width: 1200px;
+            overflow: hidden;
+
+            .shoplist {
+                padding-top: 20px;
+                .cloth {
+                    margin-left: 15px;
+                    width: 1200px;
+
+                    > li {
+                        width: 200px;
+                        line-height: 20px;
+                        position: relative;
+                        margin-right: 20px;
+                        padding: 5px;
+                        border: 1px solid #ecebeb;
+                        margin-bottom: 40px;
+                        float: left;
+                        img {
+                            display: block;
+                        }
+                        a.pic {
+                            display: block;
+                            position: relative;
+                            margin-bottom: 10px;
+                            width: 200px;
+                            height: 200px;
+                            left: 0;
+                            top: 0;
+                        }
+                        .pic-list {
+                            width: 185px;
+                            height: 38px;
+                            padding: 1px 0 0 15px;
+                            margin-bottom: 2px;
+                            overflow: hidden;
+                            position: relative;
+                            > a {
+                                display: none;
+                            }
+                            div.lunbo {
+                                width: 176px;
+                                overflow: hidden;
+                                position: relative;
+                                ul {
+                                    width: 600px;
+                                    height: 38px;
+                                    li {
+                                        float: left;
+                                        margin: 0 7px 0 0;
+                                        width: 38px;
+                                        height: 38px;
+                                        line-height: 38px;
+                                        position: static;
+                                        padding: 0;
+                                        border: none;
+                                        background: none;
+                                        transition: none;
+                                        a {
+                                            border: 1px solid #e7e7e9;
+                                            display: block;
+                                            margin: 1px;
+                                            img {
+                                                width: 34px;
+                                                height: 34px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .price {
+                            color: #878787;
+                            position: static;
+                            left: 0;
+                            top: 0;
+                            line-height: 20px;
+                            width: 200px;
+                            height: 22px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            .price_n {
+                                font-size: 16px;
+                                color: #c30;
+                                font-weight: bold;
+                                padding-right: 10px;
+                                font-family: Arial;
+                                color: #fa5000;
+                            }
+                        }
+                        .name {
+                            display: block;
+                            height: 20px;
+                            line-height: 20px;
+                            overflow: hidden;
+                            width: 200px;
+                            font-family: Arial;
+                            position: static;
+                            left: 0;
+                            top: 0;
+                            word-break: break-all;
+                            word-wrap: break-word;
+                            > a {
+                                color: #333;
+                                font-size: 12px;
+                                &:hover {
+                                    color: red;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        .search_hot {
+                            height: 20px;
+                            line-height: 20px;
+                            color: #fa5000;
+                            overflow: hidden;
+                            font-size: 12px;
+                        }
+                        .star {
+                            color: #666;
+                            padding: 1px 0 0;
+                            .level {
+                                margin: -2px 10px 0 0;
+                                background: url("../images/icon_star3.png") 0 -16px repeat-x;
+                                display: inline-block;
+                                width: 76px;
+                                height: 16px;
+                                vertical-align: middle;
+                                overflow: hidden;
+                                line-height: 12px;
+                                font-size: 0;
+                                span {
+                                    width: 90%;
+                                    vertical-align: top;
+                                    background: url("../images/icon_star3.png") 0 -16px repeat-x;
+                                    display: inline-block;
+                                    height: 16px;
+                                    overflow: hidden;
+                                    line-height: 12px;
+                                    font-size: 0;
+                                    background-position: left top;
+                                }
+                            }
+                            > a {
+                                color: #1a66b3;
+                            }
+                        }
+                        .link {
+                            height: 18px;
+                            line-height: 22px;
+                            margin-top: 3px;
+                            color: #666;
+                            padding-left: 20px;
+                            background: url("../images/tools_box_bg.png") -42px -208px no-repeat;
+                            width: 180px;
+                            position: relative;
+                            a {
+                                color: #646464;
+                                display: inline-block;
+                                overflow: hidden;
+                                height: 24px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                width: 150px;
+                                &:hover {
+                                    color: red;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        .shop_btn {
+                            height: 34px;
+                            position: relative;
+                            > .btn-p {
+                                left: -6px;
+                                top: 11px;
+                                width: 210px;
+                                border: 1px solid #ecebeb;
+                                position: absolute;
+                                a {
+                                    float: left;
+                                    color: #646464;
+                                    width: 132px;
+                                    background-color: white;
+                                    font-size: 12px;
+                                    border-radius: 0;
+                                    text-align: center;
+                                    font-family: "Microsoft YaHei";
+                                    margin: 0;
+
+                                }
+                                a.btn-cart {
+                                    height: 28px;
+                                    line-height: 28px;
+                                    display: inline-block;
+                                    span {
+                                        background: url("../images/shopping_car.png") no-repeat 0 0;
+                                        display: inline-block;
+                                        width: 28px;
+                                        height: 22px;
+                                        vertical-align: middle;
+                                    }
+                                }
+                                a.btn-collect {
+                                    width: 75px;
+                                    border-left: 1px solid #ecebeb;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        &:hover {
+                            .shop_btn {
+                                border-bottom: none;
+                                .btn-p {
+                                    left: -4px;
+                                    top: 10px;
+                                    width: 206px;
+                                    a{
+                                        height: 26px;
+                                        &:hover{
+                                            color:red;
+                                            background: #FFB7B7;
+                                        }
+                                    }
+                                    a.btn-collect {
+                                        width: 73px;
+                                    }
+                                }
+                            }
+                            border: 2px solid #fa5000;
+                            padding: 4px;
+                            
+
+                        }
+                    }
+                }
+            }
+        }
+        .list-con-ri {
+            width: 222px;
+            float: right;
+            overflow: hidden;
+        }
+    }
+}

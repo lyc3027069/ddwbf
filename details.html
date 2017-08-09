@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header></header>
+		<div id="ad" class="margin">
+			<div class="ad-img">
+				<a href="javascript:;">
+					<img src="images/list-ad-img.jpg" />
+				</a>
+			</div>
+		</div>
+
+		<div id="main" class="margin">
+			<div class="top">
+				<div class="t-left">
+					<a href="javascript:;">男士服装</a>
+					<span>&gt;</span>
+					<a href="javascript:;">T恤</a>
+					<span>&gt;</span>
+					<a href="javascript:;">森马T恤</a>
+					<span class="total">森马短袖T恤 夏装 男士圆领图案印花男装针织衫韩版潮款</span>
+
+				</div>
+			</div>
+
+			<div class="pro-main margin">
+				<script id="details" type="text/html">
+
+					<div class="pic-info">
+						<div class="largepic">
+							<a href="javascript:;" class="normal-pic">
+								<img src="{{detailspic[0][1]}}" />
+								<!--<img src="images/details11-mid.jpg" />-->
+								<div class="movemask">
+
+								</div>
+							</a>
+
+							<div class="big-pic">
+								<img src="{{detailspic[0][2]}}" />
+							</div>
+						</div>
+						<div class="dp_side">
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+							<div class="db-side-box">
+								<ul>
+									{{each detailspic as value1 i}}
+									<li>
+										<a href="javascript:;">
+											<img src="{{value1[0]}}" />
+										</a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<div class="share clear">
+							<div class="share-icon">
+								<a href="javascript:;">分享</a>
+								<ul style="display: none;">
+									<li>微信</li>
+									<li>新浪</li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="collect">
+								<i></i> 收藏商品（99人气）
+							</a>
+						</div>
+					</div>
+					<div class="show-info">
+						<div class="sale-box clear">
+							<div class="sale-box-left">
+								<div class="name-info">
+									<h1>{{name}}</h1>
+									<h2>{{search_hot}}</h2>
+								</div>
+								<div class="messbox-info">
+									<div class="command clear">
+										<span class="star-box">
+										<span style="width: {{star[0]}};"></span>
+										</span>
+										<a href="javascript:;">{{star[1]}}</a>
+										条评论
+									</div>
+								</div>
+								<div class="price-info">
+
+									<div class="price_d">
+										<p class="t" id="dd-price-text">当当价</p>
+										<p><span class="yen">¥</span>{{priceInfo[0]}}</p>
+									</div>
+									<div class="price_zhe">{{priceInfo[1]}}</div>
+									<div class="price_m">吊牌价</div>
+									<div class="price_m price_m_t"><span class="yen">¥</span>{{priceInfo[2]}}</div>
+								</div>
+								<div class="cuxiao-info clear">
+									<div class="left letter2">
+										促销
+									</div>
+									<div class="right">
+										<div class="clear">
+											<b>满额减</b>
+											<div class="rule">
+												<p>
+													<span>满¥99减¥30，满¥199减¥100</span>
+													<a href="javascript:;">详情>></a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="area-info">
+									<div class="left letter3">
+										配送至
+									</div>
+									<div class="right">
+										浙江杭州市 至北京市东城区缺货运费10元，满69元免运费
+									</div>
+								</div>
+								<div class="area-info">
+									<div class="left letter2">
+										服务
+									</div>
+									<div class="right">
+										由“{{link}}”发货，并提供售后服务。
+									</div>
+								</div>
+								<div class="color-code">
+									<div class="color clear">
+										<div class="left letter2">
+											颜色
+										</div>
+										<div class="right">
+											<div class="clear">
+												<ul>
+													<li class="clear">
+														{{each smallImgSrc as value1 i}}
+														<a href="javascript:;" d-name="{{color[i]}}"><img src="{{smallImgSrc[i]}}" /><i></i></a>
+														{{/each}}
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="size clear">
+										<div class="left letter2">
+											尺码
+										</div>
+										<div class="right">
+											<div class="clear">
+												<ul>
+													<li class="clear">
+														{{each size as value1 i}}
+														<a href="javascript:;" d-name="{{size[i]}}">{{size[i]}}</a>
+														{{/each}}
+														<!--<a href="javascript:;" class="disabled" d-name="S">S</a>
+														<a href="javascript:;" class="active" d-name="M">M</a>
+														<a href="javascript:;" d-name="L">L</a>
+														<a href="javascript:;" d-name="XL">XL</a>
+														<a href="javascript:;" d-name="XXL">XXL</a>-->
+
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="buy-box clear">
+									<div class="num">
+										<input type="text" value="1" class="txt" />
+										<a href="javascript:;" class="add"></a>
+										<a href="javascript:;" class="del disabled"></a>
+
+									</div>
+									<div class="buy-btn clear">
+										<a href="cart.html" class="btn-red">
+											<i></i> 加入购物车
+										</a>
+										<a href="cart.html" class="btn-b">
+											立即购买
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="serive-more">
+								<img src="images/serive-more.png" />
+							</div>
+						</div>
+					</div>
+				</script>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//(function($) {
+				//$.ajaxSettings.async = false;
+				//})(jQuery);
+				//显示顶部下拉菜单
+
+				$("header").load('header.html', function() {
+					$("header ul li.show").mouseover(function() {
+
+						$(this).addClass("te").find("dl").css("display", "block").prev().find("i").html("&#xe64d;&nbsp;&nbsp;");
+
+					});
+					$("header ul li.show").mouseout(function() {
+						$(this).removeClass("te").find("dl").css("display", "none").prev().find("i").html("&#xe690;&nbsp;&nbsp;");
+					});
+					var str = getCookie("cart");
+					if(str == undefined) {
+						var arr = [];
+					} else {
+						var arr = JSON.parse(str);
+					}
+					var sum = 0;
+					for(var i = 0; i < arr.length; i++) {
+						sum += parseInt(arr[i].num);
+					}
+					$("#cart-num").html(sum);
+				});
+				$("footer").load('footer.html');
+
+				$.get("json/list.json", function(data) {
+					//var html = template("clothcopy", data);
+					var str = location.search;
+					var proid = str.split("=")[1];
+					console.log(data.shoppinginfo.length,proid);
+					for(var i = 0; i < data.shoppinginfo.length; i++) {
+						console.log(data.shoppinginfo[i].id == proid);
+						if(data.shoppinginfo[i].id == proid) {
+							console.log(data.shoppinginfo[i]);
+							var html = template("details", data.shoppinginfo[i]);
+							$(".pro-main").html(html);
+							//console.log($(".btn-red"));
+							//选择颜色
+							$(".color .right ul li a").click(function() {
+								if($(this).attr("class") != "disabled") {
+									$(this).addClass("active").siblings().removeClass("active");
+								}
+
+							})
+							//选择尺码
+							$(".size .right ul li a").click(function() {
+								if($(this).attr("class") != "disabled") {
+									$(this).addClass("active").siblings().removeClass("active");
+								}
+							})
+							//增加减少数量
+							$(".buy-box .num .add").click(function() {
+								var value = parseInt($(this).siblings("input").val());
+
+								if(value == 1) {
+									$(this).siblings(".del").removeClass("disabled");
+								}
+								$(this).siblings("input").val(value + 1);
+							})
+							$(".buy-box .num .del").click(function() {
+
+								var value = parseInt($(this).siblings("input").val());
+								if(value != 1) {
+
+									if(value == 2) {
+										$(this).addClass("disabled");
+									}
+									$(this).siblings("input").val(value - 1);
+								}
+
+							})
+
+							$(".btn-red").click(function() {
+								var str1 = location.search;
+								var proID = str1.split("=")[1];
+								//var proID = this.getAttribute("data-id");
+								//setCookie("cartnum", JSON.stringify(obj1), 1)
+								//cart.innerHTML = "购物车：" + obj1.cartnum;
+								var obj = {};
+								obj.color = $(".color .right ul li a.active").attr("d-name");
+								obj.size = $(".size .right ul li a.active").attr("d-name");
+								obj.num = parseInt($(".buy-box .num .txt").val());
+								obj.proID = proID;
+								if(obj.proID)
+									var str = getCookie("cart");
+								if(str == undefined) {
+									var arr = [obj];
+								} else {
+									var arr = JSON.parse(str);
+									var len = arr.length;
+									var flag=true;
+									for(var i = 0; i < len; i++) {
+										if(arr[i].proID == obj.proID && arr[i].color == obj.color && arr[i].size == obj.size) {
+											arr[i].num = arr[i].num + obj.num;
+											flag=false;
+											//console.log(obj, arr);
+										} 
+									}
+									if(flag){
+											arr.push(obj);
+										}
+								}
+
+								var objToStr = JSON.stringify(arr);
+								setCookie("cart", objToStr, 7);
+								//console.log(num);
+								//cartNum.innerHTML = sum;
+
+							});
+
+						}
+					}
+
+					//$(".cloth").html(html);
+					//点击小图切换
+					$(".color .right ul li a:first").addClass("active");
+					$(".size .right ul li a:first").addClass("active");
+					$(".size .right ul li a:last").addClass("disabled");
+					
+					$(".dp_side .db-side-box ul li").mouseover(function() {
+						var index = $(this).index();
+						var str = $(this).find("img").attr("src");
+						strMid = str.replace(/.jpg$/, "-mid.jpg");
+						strBig = str.replace(/.jpg$/, "-big.jpg");
+						$(this).parents(".dp_side").prev().find(".normal-pic img").attr({ "src": strMid });
+						$(this).parents(".dp_side").prev().find(".big-pic img").attr({ "src": strBig });
+						//console.log(str,strMid,strBig);
+					});
+					//放大镜
+					$(".pro-main .pic-info .largepic").mouseover(function() {
+						$(this).find(".movemask").css({ "display": "block" });
+						$(this).find(".big-pic").css({ "display": "block" });
+						//$(this).find(".movemask").offset({ top: 10, left: 30 });
+						//$(this).find(".movemask").position({ top: 10, left: 30 });
+						var _this = $(this);
+						$(document).mousemove(function(evt) {
+							var _left = evt.pageX - $(_this).offset().left - $(_this).find(".movemask").outerWidth() / 2;
+							var _top = evt.pageY - $(_this).offset().top - $(_this).find(".movemask").outerHeight() / 2;
+							if(_left < 0) {
+								_left = 0;
+							}
+							if(_top < 0) {
+								_top = 0;
+							}
+							if(_top >= $(_this).outerHeight() - $(_this).find(".movemask").outerHeight()) {
+								_top = $(_this).outerHeight() - $(_this).find(".movemask").outerHeight();
+							}
+							if(_left >= $(_this).outerWidth() - $(_this).find(".movemask").outerWidth()) {
+								_left = $(_this).outerWidth() - $(_this).find(".movemask").outerWidth();
+							}
+							//console.log(evt.pageX - $(_this).offset().left, $(_this).find(".movemask").outerHeight());
+							//$(this).find(".movemask").position({ top: evt.offsetY, left: evt.offsetX });
+							$(_this).find(".movemask").css({ "left": _left + "px", "top": _top + "px" });
+							$(_this).find(".big-pic img").css({ "left": -2 * _left + "px", "top": -2 * _top + "px" });
+						})
+
+					}).mouseout(function() {
+						$(document).mousemove();
+						$(this).find(".movemask").css({ "display": "none" });
+						$(this).find(".big-pic").css({ "display": "none" });
+					});
+
+				});
+
+			});
+			//加入购物车
+		</script>
+	</body>
+
+</html>

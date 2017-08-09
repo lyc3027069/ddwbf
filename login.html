@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录-当当网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="images/logo.png" /></a>
+			<div class="improve">
+				<span class="iconfont">&#xe694;</span>
+				<a href="#">"登录页面"改进意见</a>
+			</div>
+		</header>
+		<section id="main" class="margin clear">
+			<img src="images/login_bg.png" />
+			<div id="login">
+				<h3 class="clear">
+					<span>
+						密码登录
+					</span>
+					<i><img src="images/login_t11.png"/></i>
+					<a href="javascript:;"><img src="images/login_t1.png"/></a>
+				</h3>
+				<div id="login-wrap">
+					<div id="username_div" class="wdpd">
+						<span class="iconfont">&#xe899;</span>
+						<input type="text" name="" class="user" />
+						<span class="placeholder">邮箱/昵称/手机号码</span>
+					</div>
+					<p class="username-tip"><span>请输入邮箱/昵称/手机号码</span></p>
+					<div id="password_div" class="wdpd">
+						<span class="iconfont">&#xe603;</span>
+						<input type="password" name="" class="pass" />
+						<span class="placeholder">密码</span>
+					</div>
+					<p class="password-tip"><span>请填写长度为6-20个字符的密码</span></p>
+					<p class="auto-login">
+						<input type="checkbox" checked="checked" />
+						<span class="safe">请勿在公用电脑上勾选此选项</span>
+						<a href="javascript:;">忘记密码？</a>
+					</p>
+					<a href="javascript:;" class="submit-login">登录</a>
+					<div class="regsiter">
+						<span>使用合作网站登录</span>
+						<a href="register.html">立即注册</a>
+					</div>
+					<div class="partner">
+						<a href="javascript:;" title="QQ" class="iconfont"></a>
+						<a href="javascript:;" title="微信" class="iconfont"></a>
+						<a href="javascript:;" title="新浪" class="iconfont"></a>
+						<a href="javascript:;" title="支付宝" class="iconfont"></a>
+						<span>更多<i>　</i></span>
+						<div class="more">
+
+							<a href="javascript:;">豆瓣</a>
+							<a href="javascript:;">百度</a>
+							<a href="javascript:;">飞信</a>
+							<a href="javascript:;">人人网</a>
+							<b></b>
+
+						</div>
+					</div>
+				</div>
+				<div id="login-wrap-ewm">
+					<div>
+						<img src="images/login-ewm.png" />
+					</div>
+					<p>打开<span>手机当当</span>扫一扫登录</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+
+		</footer>
+		<script type="text/javascript">
+			$("footer").load('footer.html');
+			$("#login h3 i").click(function() {
+				if($(this).find("img").attr("src") == "images/login_t11.png") {
+					$(this).find("img").attr("src", "images/login_t22.png");
+					$(this).next().find("img").attr("src", "images/login_t2.png");
+					$(this).prev().text("扫码登录");
+					//console.log($(this).parent().parent().find("#login-wrap-ewm"));
+					$(this).parent().parent().find("#login-wrap-ewm").css("display", "block").prev().css("display", "none");
+
+				} else {
+					$(this).find("img").attr("src", "images/login_t11.png");
+					$(this).next().find("img").attr("src", "images/login_t1.png");
+					$(this).prev().text("密码登录");
+					$(this).parent().parent().find("#login-wrap").css("display", "block").next().css("display", "none");
+				}
+			});
+
+			function getFocus(ele) {
+				ele.focus(function() {
+					ele.css("color", "#9A9FA6").prev().css("color", "#ccc").parent().css("border", "1px solid #9A9FA6");
+					ele.next().css("display", "none");
+
+					if(ele.attr("class") == "user") {
+						ele.parent().next().children().html("请输入邮箱/昵称/手机号码");
+					}
+					if(ele.attr("class") == "pass") {
+						ele.val("").parent().next().children().html("请填写长度为6-20个字符的密码");
+					}
+					ele.parent().next().children().css("display", "block").css("color", "#9A9FA6");
+				});
+				ele.blur(function() {
+					if(ele.val() == "") {
+
+						$(this).next().css("display", "block");
+						ele.parent().next().children().css("display", "none");
+					}
+					ele.parent().next().children().html("")
+					ele.parent().css("border", "1px solid #e6e6e6");
+				})
+				ele.next().click(function() {
+					ele.focus();
+				});
+			}
+
+			function getError(ele) {
+				ele.css("color", "red").prev().css("color", "red");
+				ele.parent().css("border", "1px solid red");
+				ele.parent().next().children().css("color", "red");
+				if(ele.attr("class") == "user") {
+					ele.parent().next().children().html("用户名或密码输入错误，请核对后重新输入。");
+				}
+				if(ele.attr("class") == "pass") {
+					ele.val("").parent().next().children().html("");
+				}
+
+			}
+			getFocus($(".user"));
+			getFocus($(".pass"));
+			$(".auto-login .safe").prev().click(function() {
+				console.log($(this).prop("checked"));
+				if($(this).prop("checked")) {
+					$(this).next().text("请勿在公用电脑上勾选此选项");
+				} else {
+					$(this).next().text("七天内自动登录");
+				}
+			})
+			$(".partner span").click(function() {
+				if($(this).next().css("display") == "none") {
+					$(this).next().css("display", "block");
+					$(this).find("i").css("background", "url('images/login_icon.png') no-repeat -32px -340px")
+
+				} else {
+					$(this).next().css("display", "none");
+					$(this).find("i").css("background", "url('images/login_icon.png') no-repeat 0 -340px")
+				}
+			})
+
+			$(".submit-login").click(function() {
+				//console.log($(".user").val(), $(".pass").val());
+				var str = getCookie("user-pass");
+				if(str == undefined) {
+					var obj = [];
+					getError($(".user"));
+					getError($(".pass"));
+				} else {
+					var obj = JSON.parse(str);
+				}
+				console.log(obj[0]);
+				var flag=false;
+				for(var i = 0; i < obj.length; i++) {
+					console.log($(".user").val() ==obj[i].name,$(".pass").val() ==obj[i].value,obj[i].name,$(".pass").val() ,obj[i].value );
+					if($(".user").val() ==obj[i].name&&$(".pass").val() ==obj[i].value ) {
+						flag=true;
+						
+					}
+				}
+				if(flag){
+					window.location.href = "index.html";
+				}else{
+					getError($(".user"));
+					getError($(".pass"));
+				}
+				
+				//				$.ajax({
+				//					type: "POST",
+				//					url: "php/login.php",
+				//					data: "userword=" + $(".user").val() + "&password=" + $(".pass").val(),
+				//					success: function(msg) {
+				//						var msg = JSON.parse(msg);
+				//						//有后台的情况
+				//						if(msg) {
+				//							//console.log(msg);
+				//							window.location.href = "index.html";
+				//						} else {
+				//							//console.log("aaa");
+				//							getError($(".user"));
+				//							getError($(".pass"));
+				//						}
+				//						//用cooike模拟
+				//
+				//					}
+				//				});
+
+			})
+		</script>
+	</body>
+
+</html>

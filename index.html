@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/slider2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header></header>
+		<div id="main" class="margin">
+			<div id="con-first" class="clear">
+				<div id="partNav">
+
+					<ul>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">电子书</a><span class="dl">、</span>
+							<a href="list.html">网络文学</a><span class="dl">、</span>
+							<a href="list.html">手机</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+						<li>
+							<a href="list.html">图书</a><span class="dl">、</span>
+							<a href="list.html">童书</a>
+						</li>
+
+					</ul>
+					<div class="nav-con">
+						<script id="navCon" type="text/html">
+							<div class="navList clearfix">
+								<div class="part1">
+									<div class="channel clearfix">
+										{{each recm as value}}
+										<a href="list.html" target="_blank">{{value.tit}}<span>&gt;</span></a>
+										{{/each}}
+									</div>
+									<div class="detail">
+										{{each subNavLists as value1}}
+										<dl class="detail_item clearfix">
+											<dt><a href="list.html" target="_blank">{{value1.subNavTit}}<span>&gt;</span></a></dt>
+											<dd>
+												{{each value1.subNavList as value11}}
+												<a href="list.html" target="_blank">{{value11}}</a>
+												{{/each}}
+											</dd>
+										</dl>
+										{{/each}}
+									</div>
+								</div>
+								<div class="part2">
+									<div class="tjImg">
+										{{each tjImg as value9}}
+										<a href="list.html" target="_blank"><img src="{{value9}}" /></a>
+										{{/each}}
+										<a href="list.html"></a>
+									</div>
+									<div class="tjImgBig">
+										{{each tjImgBig as value9}}
+										<a href="list.html" target="_blank"><img src="{{value9}}" /></a>
+										{{/each}}
+									</div>
+								</div>
+							</div>
+						</script>
+					</div>
+
+				</div>
+				<div id="banner">
+					<div class="sliderBox">
+						<ul class="sliderList">
+							<li>
+								<a href="javascript:;"><img src="images/banner-1.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/banner-2.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/banner-3.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/banner-4.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/banner-5.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/banner-6.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/banner-7.jpg" /></a>
+							</li>
+
+						</ul>
+
+						<ul class="sliderNav">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+
+						</ul>
+						<div class="sliderBtns">
+							<div class="btn">&lt;</div>
+							<div class="btn">&gt;</div>
+						</div>
+					</div>
+					<div class="sliderBox3">
+						<ul>
+							<li><a href="list.html"><img src="images/louceng1.jpg"/></a><i></i></li>
+							<li><a href="list.html"><img src="images/louceng2.jpg"/></a><i></i></li>
+							<li><a href="list.html"><img src="images/louceng3.jpg"/></a><i></i></li>
+							<li><a href="list.html"><img src="images/louceng4.jpg"/></a><i></i></li>
+							
+						</ul>
+					</div>
+				</div>
+
+				<div class="side">
+					<div class="side-t">
+						<img src="images/side-t.jpg" />
+					</div>
+					<div class="side-c">
+						<p>
+							<a href="javascript:;" class="active">信息公告</a>
+							<a href="javascript:;">服务公告</a>
+						</p>
+						<div class="side-c-tab">
+							<div class="side-c-tab1 active">
+								<ul>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="side-c-tab1">
+								<ul>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈2</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈2</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈2</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈2</a>
+									</li>
+									<li>
+										<a href="javascript:;">哇哈哈哈哈哈哈哈哈哈哈哈2</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="side-b sliderBox2">
+						<ul class="sliderList2">
+							<li>
+								<a href="javascript:;"><img src="images/side-b.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/side-b2.jpg" /></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="images/side-b3.jpg" /></a>
+							</li>
+
+						</ul>
+
+						<ul class="sliderNav2">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+
+						</ul>
+						<div class="sliderBtns2">
+							<div class="btn">&lt;</div>
+							<div class="btn">&gt;</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div id="con-s" class="clear">
+				<div class="miaosha">
+					<div class="head clear">
+						<div class="time clear">
+							<a href="javascript:;" class="clear">
+								<img src="images/home_miaosha_title.png" />
+								<i class="iconfont">&#xe62a;</i>
+							</a>
+							<div class="djs"></div>
+
+						</div>
+						<ul class="change clear">
+							<li>
+								<a href="javascript:;">00:00场</a>
+							</li>
+							<li>
+								<a href="javascript:;">10:00场</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="active">12:00场</a>
+							</li>
+							<li>
+								<a href="javascript:;">17:00场</a>
+							</li>
+							<li>
+								<a href="javascript:;">22:00场</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="list">
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:;">
+								<img src="images/miaosha1.jpg" />
+							</a>
+							<div class="line">
+								<span class="miao_pro"></span>
+								<span class="num-bg"></span>
+							</div>
+							<div class="num">
+								已秒杀23%
+							</div>
+							<div class="name">
+								<a href="javascript:;">森马春秋季新款布洛克女鞋厚底系带圆头英伦平底学生复古休闲鞋女</a>
+							</div>
+							<div class="price">
+								"秒杀价:￥"
+								<span>59</span>
+								<span class="del">129</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="firm-week">
+					<div class="head">
+						<h3>
+							<span>厂商周</span>
+							<div class="icon">
+								<a href="javascript:;"></a>
+							<a href="javascript:;" class="active"></a>
+							</div>
+							
+						</h3>
+					</div>
+					<div class="tab">
+						<div>
+							<a href="javascript:;"><img src="images/con-s-week-1.jpg" /></a>
+							<a href="javascript:;"><img src="images/con-s-week-2.jpg" /></a>
+							<a href="javascript:;"><img src="images/con-s-week-1.jpg" /></a>
+							<a href="javascript:;"><img src="images/con-s-week-2.jpg" /></a>
+						</div>
+						<div class="active">
+							<a href="javascript:;"><img src="images/con-s-week-3.jpg" /></a>
+							<a href="javascript:;"><img src="images/con-s-week-4.jpg" /></a>
+							<a href="javascript:;"><img src="images/con-s-week-3.jpg" /></a>
+							<a href="javascript:;"><img src="images/con-s-week-4.jpg" /></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="con-v" class="clear">
+				<div class="v-head clear">
+					<a href="javascript:;">
+						<img src="images/con-v-head.png" />
+					</a>
+					<a href="javascript:;">每天10点上新</a>
+
+				</div>
+				<div class="v-con">
+					<div class="v-con-le">
+						<a href="javascript:;"><img src="images/con-v-con-le.jpg" /></a>
+						<div class="logo-box clear">
+							<a href="javascript:;" class="valign"><img src="images/con-v-con-logo1.jpg" /></a>
+							<a href="javascript:;" class="valign"><img src="images/con-v-con-logo2.jpg" /></a>
+							<a href="javascript:;" class="valign"><img src="images/con-v-con-logo3.jpg" /></a>
+							<a href="javascript:;" class="valign"><img src="images/con-v-con-logo4.jpg" /></a>
+
+						</div>
+					</div>
+					<div class="v-con-ri">
+						<div class="v-con-ri-t clear">
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-t1.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-t2.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-t3.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-t4.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-t2.jpg" /></a>
+
+						</div>
+						<div class="v-con-ri-b clear">
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-b1.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-b1.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-b1.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-b1.jpg" /></a>
+							<a href="javascript:;" class="pic"><img src="images/con-v-con-ri-b1.jpg" /></a>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<div id="book-new">
+				<div class="book-new-le">
+					<div class="head">
+						<a href="javascript:;">图书</a>
+						<span>·</span>
+						<a href="javascript:;">电子书</a>
+						<span>·</span>
+						<a href="javascript:;">网络文学</a>
+						<span>·</span>
+					</div>
+					<div class="con">
+						<div class="title">
+							<ul>
+								<li class="active"><span>最新上架</span></li>
+								<li><span>最新上架</span></li>
+								<li><span>最新上架</span></li>
+								<li><span>最新上架</span></li>
+								<li><span>最新上架</span></li>
+							</ul>
+						</div>
+						<div class="tab-box">
+							<div class="tab-box-con active">
+								<div class="tab-left">
+									<img src="images/tab-left.jpg" />
+									<p>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+
+									</p>
+								</div>
+								<div class="tab-right-tl sliderBox4">
+									<ul class="sliderList4">
+										<li>
+											<a href="javascript:;"><img src="images/banner02-335x220-0630.jpg" /></a>
+										</li>
+										<li>
+											<a href="javascript:;"><img src="images/banner02-335x220_djj_0808.jpg" /></a>
+										</li>
+										<li>
+											<a href="javascript:;"><img src="images/banner02_dl_20170808-wydjp.jpg" /></a>
+										</li>
+
+									</ul>
+
+									<ul class="sliderNav4">
+										<li></li>
+										<li></li>
+										<li></li>
+
+									</ul>
+									<div class="sliderBtns4">
+										<div class="btn">&lt;</div>
+										<div class="btn">&gt;</div>
+									</div>
+
+								</div>
+								<div class="tab-right-tr">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+								<div class="tab-right-b">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+
+							</div>
+							<div class="tab-box-con">
+								<div class="tab-left">
+									<img src="images/tab-left2.jpg" />
+									<p>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+
+									</p>
+								</div>
+								<div class="tab-right-tl">
+									<img src="images/banner02-335x220-0630.jpg" />
+								</div>
+								<div class="tab-right-tr">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+								<div class="tab-right-b">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+
+							</div>
+							<div class="tab-box-con">
+								<div class="tab-left">
+									<img src="images/tab-left3.jpg" />
+									<p>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+
+									</p>
+								</div>
+								<div class="tab-right-tl">
+<img src="images/banner02-335x220-0630.jpg" />
+								</div>
+								<div class="tab-right-tr">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+								<div class="tab-right-b">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+
+							</div>
+							<div class="tab-box-con">
+								<div class="tab-left">
+									<img src="images/tab-left4.jpg" />
+									<p>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+
+									</p>
+								</div>
+								<div class="tab-right-tl">
+<img src="images/banner02-335x220-0630.jpg" />
+								</div>
+								<div class="tab-right-tr">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+								<div class="tab-right-b">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+
+							</div>
+							<div class="tab-box-con">
+								<div class="tab-left">
+									<img src="images/tab-left5.jpg" />
+									<p>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+										<a href="javascript:;">网文</a>
+										<a href="javascript:;">小说</a>
+										<a href="javascript:;">经管励志</a>
+
+									</p>
+								</div>
+								<div class="tab-right-tl">
+<img src="images/banner02-335x220-0630.jpg" />
+								</div>
+								<div class="tab-right-tr">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+								<div class="tab-right-b">
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr1.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<a href="javascript:;"><img src="images/tab-right-tr2.jpg" /></a>
+											<p class="name">
+												<a href="javascript:;" title="北京,北京:春风十里不如你原著(电子书)">北京,北京:春风十里不如你原著(电子书)</a>
+											</p>
+											<p class="price"><span class="yuan">￥45.80</span><span>￥65.00</span></p>
+										</li>
+									</ul>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="book-new-ri">
+					<div class="side-c">
+						<p>
+							<a href="javascript:;" class="active">信息公告</a>
+							<a href="javascript:;">服务公告</a>
+						</p>
+						<div class="side-c-tab">
+							<div class="side-c-tab1 active">
+								<ul>
+									<li class="active">
+										<span class="num">1</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格1"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">2</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">3</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">4</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">5</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">6</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">7</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">8</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">9</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">10</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+
+								</ul>
+							</div>
+							<div class="side-c-tab1">
+								<ul>
+									<li class="active">
+										<span class="num">1</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">2</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">3</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">4</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">5</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">6</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">7</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">8</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">9</span>
+										<a href="javascript:;"><img src="images/shu2.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+									<li>
+										<span class="num">10</span>
+										<a href="javascript:;"><img src="images/shu1.jpg" /></a>
+										<p class="name">
+											<a href="javascript:;">
+												"人间失格"
+												<span>超燃！“丧文化”流行，《人间失格》成了现象级畅销书，创当当3天销售50000+册的奇迹！收录作者绝</span>
+											</a>
+										</p>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="goods">
+				<div class="goods-head">
+					<div class="title">
+						<a href="javascript:;">日用百货</a>
+					</div>
+					<ul class="list">
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="goods-con">
+					<div class="con-le">
+						<a href="javascript:;"><img src="images/louceng1.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng2.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng2.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng1.jpg" /></a>
+
+					</div>
+					<div class="con-mi">
+						<a href="javascript:;"><img src="images/louceng5.jpg" /></a>
+					</div>
+					<div class="con-ri">
+						<a href="javascript:;"><img src="images/louceng3.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng4.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng4.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng3.jpg" /></a>
+
+					</div>
+				</div>
+
+			</div>
+			<div id="babys">
+				<div class="babys-head">
+					<div class="title">
+						<a href="javascript:;">日用百货</a>
+					</div>
+					<ul class="list">
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+						<li>
+							<a href="javascript:;">雅诗兰黛<i>美妆</i></a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="babys-con">
+					<div class="con-le">
+						<a href="javascript:;"><img src="images/louceng6.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng7.jpg" /></a>
+
+					</div>
+					<div class="con-mi">
+						<a href="javascript:;">
+							<img src="images/banner0808.jpg" />
+						</a>
+					</div>
+					<div class="con-ri">
+						<a href="javascript:;"><img src="images/louceng6.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng7.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng8.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng9.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng6.jpg" /></a>
+						<a href="javascript:;"><img src="images/louceng7.jpg" /></a>
+
+					</div>
+				</div>
+
+			</div>
+			<div id="home-list">
+				<div class="head">
+					<h3><span>为你推荐</span></h3>
+				</div>
+				<div class="list">
+					<ul class="clear">
+						<li>
+							<a href="javascript:;"><img src="images/list-book1.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book2.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book3.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book4.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book1.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book2.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book3.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book4.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book1.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book2.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book3.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book4.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book1.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book2.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book3.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book4.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book1.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book2.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book3.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book4.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book1.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book2.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book3.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/list-book4.jpg" /></a>
+							<p class="name">
+								<a href="javascript:;">白夜行（东野圭吾推理小说无冕之王。全新精装典藏版。）</a>
+							</p>
+							<p class="price"><span class="price-r">￥27.30</span><span class="ebookprice">￥14.99</span></p>
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+			<div id="louti">
+				<ul class="active">
+					<li>
+						<a href="javascript:;" class="f1"><span>秒杀</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="f2"><span>唯评会</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="f3"><span>图书</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="f4"><span>日用百货</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="f5"><span>为你推荐</span></a>
+					</li>
+
+				</ul>
+			</div>
+			<div id="sidebar">
+				<div class="sale">
+					<a href="javascript:;javascript:;">
+						<img src="images/20170808234547.png" />
+					</a>
+				</div>
+				<div class="side-t">
+					<a href="cart.html" class="cart on">
+						<span>购物车</span>
+					</a>
+					<a href="javascript:;" class="collect">
+						<span>我的收藏</span>
+					</a>
+					<a href="javascript:;" class="footprint">
+						<span>我的浏览</span>
+					</a>
+					<a href="javascript:;" class="side-point">
+						<span>我的积分</span>
+					</a>
+					<a href="javascript:;" class="robot">
+						<span>咨询小当家</span>
+					</a>
+
+				</div>
+				<div class="side-b">
+					<div href="javascript:;" class="vcode">
+						<a href="" class="code"></a>
+						<a href="" class="code-box"><img src="images/two_code.jpg" /></a>
+
+					</div>
+					<a href="javascript:;" class="back-top">
+						<span>回到顶部</span>
+					</a>
+					<a href="javascript:;" class="survey">
+						<span>意见反馈</span>
+					</a>
+					<span class="guanggao">广告</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-pic">
+				<div class="inner">
+					<a href="javascript:;"><span>正规渠道正品保障</span></a>
+					<a href="javascript:;"><span>正规渠道正品保障</span></a>
+					<a href="javascript:;"><span>正规渠道正品保障</span></a>
+					<a href="javascript:;"><span>正规渠道正品保障</span></a>
+
+				</div>
+			</div>
+			<div class="footer-public">
+				<div class="footer-sort">
+					<span>购物指南</span>
+					<ul>
+						<li>
+							<a href="javascript:;">购物流程</a>
+						</li>
+						<li>
+							<a href="javascript:;">发票制度</a>
+						</li>
+						<li>
+							<a href="javascript:;">账户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">会员优惠</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer-sort">
+					<span>购物指南</span>
+					<ul>
+						<li>
+							<a href="javascript:;">购物流程</a>
+						</li>
+						<li>
+							<a href="javascript:;">发票制度</a>
+						</li>
+						<li>
+							<a href="javascript:;">账户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">会员优惠</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer-sort">
+					<span>购物指南</span>
+					<ul>
+						<li>
+							<a href="javascript:;">购物流程</a>
+						</li>
+						<li>
+							<a href="javascript:;">发票制度</a>
+						</li>
+						<li>
+							<a href="javascript:;">账户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">会员优惠</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer-sort">
+					<span>购物指南</span>
+					<ul>
+						<li>
+							<a href="javascript:;">购物流程</a>
+						</li>
+						<li>
+							<a href="javascript:;">发票制度</a>
+						</li>
+						<li>
+							<a href="javascript:;">账户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">会员优惠</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer-sort">
+					<span>购物指南</span>
+					<ul>
+						<li>
+							<a href="javascript:;">购物流程</a>
+						</li>
+						<li>
+							<a href="javascript:;">发票制度</a>
+						</li>
+						<li>
+							<a href="javascript:;">账户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">会员优惠</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer-sort">
+					<span>购物指南</span>
+					<ul>
+						<li>
+							<a href="javascript:;">购物流程</a>
+						</li>
+						<li>
+							<a href="javascript:;">发票制度</a>
+						</li>
+						<li>
+							<a href="javascript:;">账户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">会员优惠</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<footer></footer>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//(function($) {
+				//$.ajaxSettings.async = false;
+				//})(jQuery);
+				//显示顶部下拉菜单
+
+				$("header").load('header.html', function() {
+					$("header ul li.show").mouseover(function() {
+
+						$(this).addClass("te").find("dl").css("display", "block").prev().find("i").html("&#xe64d;&nbsp;&nbsp;");
+					});
+					$("header ul li.show").mouseout(function() {
+						$(this).removeClass("te").find("dl").css("display", "none").prev().find("i").html("&#xe690;&nbsp;&nbsp;");
+					});
+					var str = getCookie("cart");
+					if(str == undefined) {
+						var arr = [];
+					} else {
+						var arr = JSON.parse(str);
+					}
+					var sum = 0;
+					for(var i = 0; i < arr.length; i++) {
+						sum += parseInt(arr[i].num);
+					}
+					$(".cart-num").html(sum);
+					
+				});
+				$("footer").load('footer.html');
+
+				//右侧边栏效果
+				$("#sidebar a").mouseover(function() {
+					$(this).addClass("on").find("span").stop().animate({ left: "-79px" });
+					event.stopPropagation();
+				}).mouseout(function() {
+					$(this).removeClass("on").find("span").stop().animate({ left: "0px" });
+					event.stopPropagation();
+				})
+				//搜索框移入后出现下拉菜单
+				$(".search-list").mouseover(function() {
+					$(this).find("div").css("display", "block");
+				}).mouseout(function() {
+					$(this).find("div").css("display", "none");
+				});
+				//左边导航栏移入效果
+				$("#partNav ul li").mouseover(function() {
+					var index = $(this).index();
+					$("#partNav").children("div").css("display", "block");
+					$(this).addClass("on").siblings("li").removeClass("on");
+
+					$.get("json/nav_data.json", function(data) {
+						var html = template("navCon", data[index]);
+						$("#partNav").children("div.nav-con").html(html);
+					})
+				})
+				$("#con-first").mouseleave(function() {
+					//var index3 = $(this).index();
+					$("#partNav ul li").removeClass("on");
+					$(".nav-con").css("display", "none");
+				});
+
+				//回到顶部
+				$(".back-top").click(function() {
+
+					$("body,html").stop().animate({ "scrollTop": "0px" });
+				})
+				//楼梯效果
+				$("#louti ul li").mouseover(function() {
+					$(this).addClass("active").siblings("li").removeClass("active");
+				});
+				$(window).scroll(function() {
+					Move();
+				})
+
+				function Move() {
+					if($(window).scrollTop() <= 500) {
+						$("#louti").fadeOut();
+					}
+					if($(window).scrollTop() > 500) {
+						$("#louti").fadeIn();
+						var num = Math.floor(($(window).scrollTop() - 500) / 500);
+						num = num < 0 ? num = 0 : num;
+						$("#louti ul li").eq(num).addClass("active").siblings().removeClass("active");
+					}
+				}
+				$("#louti ul li").click(function() {
+					var num = $(this).index() + 1;
+					$("html,body").animate({ "scrollTop": num * 500 + 200 + "px" });
+
+				})
+				//banner图左边的公告
+				$(".side-c p a").mouseover(function() {
+
+					$(this).addClass("active").siblings().removeClass("active");
+					var index = $(this).index();
+					$(this).parent().next().find("div").eq(index).addClass("active").siblings().removeClass("active");
+				});
+				//尾品会
+				$(".v-con-ri").on("mouseover", ".pic", function() {
+					$(".v-con-ri .pic").removeClass("active");
+					$(this).addClass("active");
+				})
+				//厂商周
+				$(".firm-week .head h3 div a").mouseover(function() {
+					var index = $(this).index();
+					$(this).addClass("active").siblings("a").removeClass("active");
+					$(this).parents(".head").next().children("div").eq(index).addClass("active").siblings("div").removeClass("active");
+				})
+				$(".firm-week .tab div a img").mouseover(function() {
+					$(this).animate({ "margin-left": "0" }, 100);
+				}).mouseout(function() {
+					$(this).animate({ "margin-left": "5px" }, 100);
+				});
+				//倒计时开始
+				function djs(ele) {
+					var date2 = new Date("2017-10-10 00:00:00");
+					var date1 = new Date();
+					var sum = date2 - date1;
+					var s = Math.floor((sum / 1000) % 60);
+					var m = Math.floor(sum / (1000 * 60) % 60);
+					var h = Math.floor(sum / (1000 * 60 * 60) % 60);
+
+					function format(num) {
+						num = num < 10 ? "0" + num : num;
+						return num;
+					}
+					var str = format(h) + ":" + format(m) + ":" + format(s);
+					$(".djs").html(str);
+				}
+				djs();
+				var timer1 = setInterval(djs, 1000);
+				//倒计时结束
+				//手风琴效果
+				$(".side-c-tab ul li").mouseover(function() {
+					$(this).siblings("li").removeClass("active");
+					$(this).addClass("active");
+				});
+				//图书电子书网络文学
+				$("#book-new .con .title ul").on("mouseover", "li", function() {
+					var index = $(this).index();
+					$(this).addClass("active").siblings("li").removeClass("active");
+					$(this).parent().parent().next().children(".tab-box-con").eq(index).css("display", "block").siblings(".tab-box-con").css("display", "none");
+				});
+				//banner图下方
+				$(".sliderBox3 ul li").mouseenter(function(){
+					$(this).find("i").animate({"opacity":0},100);
+				}).mouseleave(function(){
+					$(this).find("i").animate({"opacity":.1},100);
+				})
+				//轮播图
+				$(".sliderBox").slider({ showNav: true, showBtns: true });
+				$(".sliderBox2").slider2({ showNav: true, showBtns: true, width: 201, height: 119 });
+				$(".sliderBox4").slider4({ showNav: true, showBtns: true, width: 335, height: 220 });
+
+			})
+		</script>
+
+	</body>
+
+</html>
